@@ -100,3 +100,13 @@ class DmozSpider(scrapy.Spider):
 >
 > -o items.json 输出文件到 items.json
 > -t json 使用json 格式输出获取到的内容(items.py定义的)
+
+## 参考链接
+
+[Spiders官网文档][link1]  
+[简书简介][link2]  
+[小甲鱼B站教学视频][link3]  
+
+[link1]:https://docs.scrapy.org/en/latest/topics/spiders.html
+[link2]:https://www.jianshu.com/p/8e78dfa7c368
+[link3]:https://www.bilibili.com/video/av4050443?p=54
