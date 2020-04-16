@@ -98,7 +98,7 @@ class DmozSpider(scrapy.Spider):
 > scrapy crawl -o items.json -t json
 > ```
 >
-> -o items.json 输出文件到 items.json
+> -o items.json 输出文件到 items.json  
 > -t json 使用json 格式输出获取到的内容(items.py定义的)
 
 ## 参考链接
