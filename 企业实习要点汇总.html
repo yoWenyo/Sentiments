@@ -1,0 +1,2484 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>企业实习要点汇总.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 id="%E4%BC%81%E4%B8%9A%E5%AE%9E%E8%AE%AD%E5%AD%A6%E4%B9%A0%E7%9F%A5%E8%AF%86%E7%82%B9%E6%B1%87%E6%80%BB">企业实训学习知识点汇总</h1>
+<h2 id="%E7%9F%A5%E8%AF%86%E7%82%B9%E6%B6%89">知识点涉</h2>
+<blockquote>
+<p>HTML、CSS、JS、jQuery、JavaEE(IDEA开发)</p>
+</blockquote>
+<h2 id="html%E6%A0%87%E7%AD%BE">HTML标签</h2>
+<h3 id="%E5%8A%A0%E7%B2%97%E5%AD%97%E4%BD%93%E7%A9%BA%E6%A0%BC">加粗、字体、空格</h3>
+<pre class="hljs"><code><div>&lt;strong&gt;xxx&lt;/strong&gt;
+&lt;font color=&quot;red&quot;&gt;极客营&lt;/font&gt;
+&amp;emsp;
+</div></code></pre>
+<h3 id="%E8%A1%A8%E6%A0%BC%E6%A0%87%E7%AD%BE">表格标签</h3>
+<pre class="hljs"><code><div>&lt;form&gt;
+&lt;!-- 三行两列 --&gt;
+&lt;table border=&quot;1&quot;&gt;
+    &lt;tr&gt;
+        &lt;td&gt;11&lt;/td&gt;
+        &lt;td&gt;12&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;21&lt;/td&gt;
+        &lt;td&gt;22&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;31&lt;/td&gt;
+        &lt;td&gt;32&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+&lt;br&gt;
+
+&lt;!-- 两行三列 --&gt;
+&lt;table border=&quot;1&quot; width=&quot;300&quot; height=&quot;300&quot; align=&quot;center&quot;&gt;
+    &lt;tr height=&quot;50&quot; align=&quot;center&quot;&gt;
+        &lt;td width=&quot;50&quot;&gt;11&lt;/td&gt;
+        &lt;td width=&quot;50&quot;&gt;12&lt;/td&gt;
+        &lt;td&gt;13&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td valign=&quot;top&quot;&gt;21&lt;/td&gt;
+        &lt;td valign=&quot;middle&quot;&gt;22&lt;/td&gt;
+        &lt;td valign=&quot;bottom&quot;&gt;23&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;!-- 列合并 --&gt;
+&lt;table border=&quot;1&quot; width=&quot;200&quot; height=&quot;200&quot;&gt;
+    &lt;tr&gt;
+        &lt;td colspan=&quot;3&quot;&gt;11&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td colspan=&quot;2&quot; width=&quot;70%&quot;&gt;21&lt;/td&gt;
+        &lt;td&gt;23&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td width=&quot;30%&quot;&gt;31&lt;/td&gt;
+        &lt;td colspan=&quot;2&quot;&gt;32&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+&lt;br&gt;
+
+&lt;!-- 行合并 --&gt;
+&lt;table border=&quot;1&quot; width=&quot;200&quot; height=&quot;200&quot;&gt;
+    &lt;tr&gt;
+        &lt;td rowspan=&quot;3&quot;&gt;11&lt;/td&gt;
+        &lt;td rowspan=&quot;2&quot;&gt;12&lt;/td&gt;
+        &lt;td&gt;13&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td rowspan=&quot;2&quot;&gt;23&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;32&lt;/td&gt;
+
+    &lt;/tr&gt;
+&lt;/table&gt;
+&lt;br&gt;
+
+&lt;!-- 表格间距 cellapacing:单元格之间的间距;cellpadding:单元格内部跟文字之间的距离 --&gt;
+&lt;table border=&quot;1&quot; width=&quot;200&quot; height=&quot;200&quot; cellspacing=&quot;10&quot; cellpadding=&quot;30&quot;&gt;
+    &lt;tr&gt;
+        &lt;td&gt;11&lt;/td&gt;
+        &lt;td&gt;12&lt;/td&gt;
+        &lt;td&gt;13&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;21&lt;/td&gt;
+        &lt;td&gt;22&lt;/td&gt;
+        &lt;td&gt;23&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;31&lt;/td&gt;
+        &lt;td&gt;32&lt;/td&gt;
+        &lt;td&gt;33&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+&lt;br&gt;
+
+&lt;!-- 表格填充 --&gt;
+&lt;table border=&quot;1&quot; width=&quot;200&quot; height=&quot;200&quot;&gt;
+    &lt;tr&gt;
+        &lt;td bgcolor=&quot;red&quot;&gt;11&lt;/td&gt;
+        &lt;td&gt;12&lt;/td&gt;
+        &lt;td&gt;13&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;21&lt;/td&gt;
+        &lt;td background=&quot;F:\OneDrive\OneDrive - Kyouya,inc\Personal Computer Memory\学习\企业实训\2020.05.07\练习资料\images\header_logo1.png&quot;&gt;22&lt;/td&gt;
+        &lt;td&gt;23&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;31&lt;/td&gt;
+        &lt;td&gt;32&lt;/td&gt;
+        &lt;td&gt;33&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+&lt;/form&gt;
+</div></code></pre>
+<h3 id="%E5%9B%BE%E7%89%87%E6%A0%87%E7%AD%BE">图片标签</h3>
+<pre class="hljs"><code><div>&lt;!-- 相对路径：从当前目录夹开始；
+     绝对路径：从根目录开始 --&gt;
+&lt;!-- 相对路径 接下来的是属于Linux的斜杠 / --&gt;
+&lt;img title=&quot;aaa&quot; width=&quot;300&quot; height=&quot;400&quot; alt=&quot;杨幂&quot; src=&quot;./练习资料/images/TB1Df_Tg46I8KJjy0FgXXXXzVXa-382-288.png&quot; /&gt;
+&lt;!-- 绝对路径 接下来的属于windows的斜杠 \ --&gt;
+&lt;img src=&quot;F:\OneDrive\OneDrive - Kyouya,inc\Personal Computer Memory\学习\企业实训\2020.05.07\练习资料\images\TB2010Fhb_I8KJjy1XaXXbsxpXa_!!0-juitemmedia.jpg_180x210_5.jpg&quot; /&gt;
+</div></code></pre>
+<h3 id="%E6%96%87%E6%9C%AC%E6%A0%87%E7%AD%BE">文本标签</h3>
+<pre class="hljs"><code><div>正文
+&lt;h1&gt;标题1&lt;/h1&gt;
+&lt;h2&gt;标题2&lt;/h2&gt;
+&lt;h3&gt;标题3&lt;/h3&gt;
+&lt;h4&gt;标题4&lt;/h4&gt;
+&lt;h5&gt;标题5&lt;/h5&gt;
+
+&lt;hr size=&quot;10px&quot; color=&quot;red&quot; width=&quot;300px&quot;&gt;&lt;/hr&gt;
+&lt;hr size=&quot;10px&quot; color=&quot;yellow&quot; width=&quot;300px&quot; align=&quot;left&quot;&gt;&lt;/hr&gt;
+&lt;hr size=&quot;10px&quot; color=&quot;green&quot; width=&quot;300px&quot; align=&quot;right&quot;&gt;&lt;/hr&gt;
+
+&lt;p&gt;小可爱&lt;/p&gt;
+&lt;p&gt;小宝贝&lt;/p&gt;
+&lt;p&gt;小公主&lt;/p&gt;
+
+&lt;font size=&quot;50&quot; color=&quot;red&quot; face=&quot;华文彩云&quot;&gt;小 坏 蛋&lt;/font&gt;
+&lt;strong&gt; &lt;font size=&quot;50&quot; color=&quot;red&quot; face=&quot;华文彩云&quot;&gt; &amp;nbsp;&amp;nbsp;&amp;nbsp;小天使&lt;/font&gt;&lt;/strong&gt;
+&lt;em&gt;&lt;strong&gt; &lt;font size=&quot;50&quot; color=&quot;red&quot; face=&quot;华文彩云&quot;&gt; &amp;nbsp;&amp;nbsp;&amp;nbsp;小姑娘&lt;/font&gt;&lt;/strong&gt;&lt;/em&gt;
+
+</div></code></pre>
+<h3 id="%E8%B6%85%E9%93%BE%E6%8E%A5">超链接</h3>
+<pre class="hljs"><code><div>&lt;!-- 点击新开一个界面--&gt;
+&lt;a href=&quot;http://www.baidu.com&quot; &gt;baidu &lt;/a&gt;
+
+&lt;br&gt;
+&lt;!--默认是当前页面打开--&gt;
+&lt;a href=&quot;.\课后练习1.html&quot; target=&quot;_self&quot;&gt;shopping mall&lt;/a&gt;
+
+&lt;br&gt;
+&lt;a href=&quot;mailto:9239277176@qq.com&quot;&gt;mail&lt;/a&gt;
+</div></code></pre>
+<h3 id="form%E8%A1%A8%E5%8D%95">Form表单</h3>
+<pre class="hljs"><code><div>&lt;form action=&quot;超链接.html&quot;&gt;
+&lt;!--input 系列 ,常用九种 --&gt;
+&lt;!-- 1.文本框 --&gt;
+账号:&lt;input type=&quot;text&quot; size=&quot;10&quot; maxlength=&quot;7&quot; name=&quot;userName&quot;/&gt;&lt;br&gt;&lt;br&gt;
+
+&lt;!-- 密码框 --&gt;
+密码：&lt;input type=&quot;password&quot; size=&quot;15&quot; name=&quot;pwd&quot;/&gt;&lt;br&gt;&lt;br&gt;
+
+&lt;!-- 单选框 --&gt;
+性别：&lt;input type=&quot;radio&quot; value=&quot;男&quot; name=&quot;sex&quot; checked=&quot;true&quot;/&gt;男
+        &lt;input type=&quot;radio&quot; value=&quot;女&quot; name=&quot;sex&quot;/&gt;女&lt;br&gt;&lt;br&gt;
+
+&lt;!-- 复选框 --&gt;
+爱好：&lt;input type=&quot;checkbox&quot; name=&quot;hobby&quot; value=&quot;学习&quot;/&gt;学习
+        &lt;input type=&quot;checkbox&quot; name=&quot;hobby&quot; value=&quot;游戏&quot;/&gt;游戏
+        &lt;input type=&quot;checkbox&quot; name=&quot;hobby&quot; value=&quot;睡觉&quot;/&gt;睡觉
+        &lt;input type=&quot;checkbox&quot; name=&quot;hobby&quot; value=&quot;吃饭&quot;/&gt;吃饭&lt;br&gt;&lt;br&gt;
+
+&lt;!-- 文件选择框 --&gt;
+文件选择：&lt;input type=&quot;file&quot; /&gt;&lt;br&gt;&lt;br&gt;
+
+&lt;!-- 按钮 --&gt;
+&lt;input type=&quot;button&quot; value=&quot;按钮&quot; /&gt;
+
+&lt;!-- 重置 --&gt;
+&lt;input type=&quot;reset&quot; /&gt;
+
+&lt;!-- 提交 --&gt;
+&lt;input type=&quot;submit&quot; /&gt;
+
+&lt;!-- 隐藏 --&gt;
+&lt;input type=&quot;hidden&quot; value=&quot;zxc&quot; name=&quot;id&quot;/&gt;&lt;br&gt;&lt;br&gt;
+
+&lt;!-- 下拉框 --&gt;
+选择喜欢的城市：
+    &lt;select&gt;
+        &lt;option&gt;---请选择---&lt;/option&gt;
+        &lt;option&gt;北京&lt;/option&gt;
+        &lt;option&gt;上海&lt;/option&gt;
+        &lt;option&gt;南京&lt;/option&gt;
+    &lt;/select&gt;&lt;br&gt;&lt;br&gt;
+&lt;!-- 多行文本框 --&gt;
+备注：&lt;textarea&gt;&lt;/textarea&gt;
+&lt;/form&gt;
+</div></code></pre>
+<h3 id="frameset%E8%A1%A8%E5%8D%95">frameset表单</h3>
+<pre class="hljs"><code><div>&lt;frameset rows=&quot;120,*&quot; noresize=&quot;0&quot;&gt;
+    &lt;frame src=&quot;http://www.baidu.com&quot;/&gt;
+    &lt;frameset cols=&quot;150,*&quot;&gt;
+        &lt;frame src=&quot;超链接.html&quot;/&gt;
+        &lt;frame src=&quot;.\课后练习1.html&quot;/&gt;
+    &lt;/frameset&gt;
+&lt;/frameset&gt;
+</div></code></pre>
+<h2 id="css%E6%A0%87%E7%AD%BE">CSS标签</h2>
+<h3 id="css%E4%B8%89%E7%B1%BB%E6%A0%87%E7%AD%BE%E6%A0%B7%E5%BC%8F">CSS三类标签样式</h3>
+<pre class="hljs"><code><div>&lt;head&gt;	&lt;!--头标签 --&gt;
+&lt;meta charset=&quot;UTF-8&quot;&gt;&lt;/meta&gt;
+&lt;title&gt;css 三类样式&lt;/title&gt;
+
+&lt;style&gt;
+    /* 内部样式：写在head头style中 */
+    div:nth-child(2){
+        width:100;
+        height:100;
+        background-color:yellow;
+    }
+&lt;/style&gt;
+
+&lt;!-- 外部样式：写在.css后缀的文件中  --&gt;
+&lt;link href=&quot;mycss.css&quot; rel=&quot;stylesheet&quot;&gt;&lt;/link&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+&lt;!-- 行内样式：“写在标签内 --&gt;
+&lt;div style=&quot;width:100;height:100;background-color:red;&quot;&gt;&lt;/div&gt;
+&lt;div&gt;&lt;/div&gt;
+&lt;div&gt;&lt;/div&gt;
+
+&lt;/body&gt;
+</div></code></pre>
+<h3 id="css%E4%BC%AA%E7%B1%BB%E9%80%89%E6%8B%A9%E5%99%A8%E5%92%8C%E5%B1%9E%E6%80%A7%E9%80%89%E6%8B%A9%E5%99%A8">CSS伪类选择器和属性选择器</h3>
+<pre class="hljs"><code><div>&lt;style&gt;
+/* css选择器 伪类选择器和属性选择器 */
+div{
+    width:100;
+    height:100;
+    border:1px solid black;
+}
+/* 伪类选择器 */
+/* 当存在input时，会将input算作div last-child */
+div:last-child{
+    background-color:green;
+    width:200px;
+}
+/* 下标从1开始 */
+div:nth-child(2){
+    background-color:yellow;
+}
+div:nth-child(3){
+    background-color:blue;
+}
+/* 鼠标移入事件 */
+div:hover{
+    background-color:white;
+}
+/* 属性选择器 */
+input[type=&quot;text&quot;]{
+    background-color:pink;
+}
+input[type=&quot;password&quot;]{
+    background-color:red;
+}
+input[name=&quot;aa&quot;][type=&quot;text&quot;]{
+    background-color:blue;
+}
+
+/* 获取光标事件 */
+input:focus{
+    background-color:yellow;
+}
+&lt;/style&gt;
+</div></code></pre>
+<h3 id="css%E7%BB%84%E5%90%88%E9%80%89%E6%8B%A9%E5%99%A8%E5%92%8C%E9%9B%86%E5%90%88%E9%80%89%E6%8B%A9%E5%99%A8">CSS组合选择器和集合选择器</h3>
+<pre class="hljs"><code><div>&lt;style&gt;
+/* css选择器 组合选择器和集合选择器 */
+div{
+    width:200;
+    height:200;
+    border:2px solid black;
+}
+p{
+    color:green;
+}
+/* 组合选择器 */
+div div{
+    width:100;
+    height:100;
+}
+div div div{
+    width:50;
+    height:50;
+}
+
+div p{
+    color:red;
+}
+
+/*  集合选择器 */
+div,p{
+    color:green;
+}
+&lt;/style&gt;
+</div></code></pre>
+<h3 id="%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B">盒子模型</h3>
+<pre class="hljs"><code><div>&lt;html&gt;
+&lt;!--HTML网页最外层标签必须是HTML --&gt;
+    &lt;head&gt;	&lt;!--头标签 --&gt;
+        &lt;meta charset=&quot;UTF-8&quot;&gt;&lt;/meta&gt;
+        &lt;title&gt;css 三类样式&lt;/title&gt;
+        &lt;!-- 外部样式：写在.css后缀的文件中 --&gt;
+        &lt;link href=&quot;mycss.css&quot; rel=&quot;stylesheet&quot;&gt;&lt;/link&gt;
+        &lt;style&gt;
+            /* 样式优先级：行内样式 最高 &gt; 内部和外部样式（按照夹加载的顺序） */ 
+            div{
+                border:2px solid red;
+            }
+        &lt;/style&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;!-- 内边距（padding）会影响本身的样式，外部容器的内边距会挤压内部容器 --&gt;
+        &lt;div style=&quot;width:200;height:200;margin:100 auto;padding-top:30;padding-left:100;&quot;&gt;
+            &lt;div style=&quot;width:100;height:100;padding:20;&quot;&gt;111&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+</div></code></pre>
+<h3 id="div%E6%A0%87%E7%AD%BE">DIV标签</h3>
+<pre class="hljs"><code><div>&lt;!--solid 实线    dotted虚线--&gt;
+&lt;div style=&quot;width:100;height:100;border:2px solid red; float:left&quot;&gt; &lt;/div&gt;
+
+&lt;div style=&quot;width:200;height:100;border:2px solid green;float:left&quot;&gt; &lt;/div&gt;
+
+&lt;div style=&quot;width:100;height:300;border:2px solid blue;float:left&quot;&gt; 
+    &lt;div style=&quot;width:50;height:60;border:2px solid black&quot;&gt; &lt;/div&gt;
+&lt;/div&gt;
+</div></code></pre>
+<h3 id="divcss">DIV+CSS</h3>
+<pre class="hljs"><code><div>/* css选择器  常用七种选择器*/
+/* css选择器优先级：ID &gt; class选择器 &gt; 标签选择器 */
+/* 一个标签适配到多个选择器时，取交集，相同属性取优先级高的选择器*/
+/* 1.标签选择器，以标签开头*/
+div{
+    width:100;
+    height:100;
+    border:1px solid red;
+
+}
+h1{
+    color:red;
+}
+
+/* 2 id选择器，以#开头 ,适配一个标签*/
+#d1{
+    background-color:blue;
+
+}
+
+/* 3 class选择器，以 . 开头，适配多个标签 */
+.dc{
+    background-color:yellow;
+    width:200;
+    height:200;
+}
+</div></code></pre>
+<h3 id="%E9%BC%A0%E6%A0%87%E7%A7%BB%E5%85%A5%E7%9B%B8%E7%89%87%E6%9C%89%E7%89%B9%E6%95%88">鼠标移入相片有特效</h3>
+<pre class="hljs"><code><div>/* 样式优先级：行内样式 最高 &gt; 内部和外部样式（按照夹加载的顺序） */ 
+
+div{
+        width:900px;
+
+        margin:0 auto;
+
+}
+div div{
+    width:200px;
+    height:240px;
+    margin:10px;
+    float:left;
+    text-align:center;
+    border:2px solid rgba(0,0,0,0);
+}
+div div:hover{
+    border:2px solid red;
+    margin-left:12px;
+    margin-right:8px;
+    /* transform:scale(1.2); */
+    /* 默认值是static，对位置没有任何操作，不是 static 时，才会解锁 top.left,right,bottom */
+    /* relative 先对定位 ：相对于父容器或者本身，进行位置的相对变化  */
+    /* absolute绝对位置 ：通过 top,left,right,bottom 属性中2个x，y的值来确定位置 */
+    /* fixed 固定定位 ： 确定位置后 不动 */
+    position: relative;
+    top: -5px;
+    left: -10px;
+}
+img{
+    width:200px;
+    height:220px;
+
+}
+</div></code></pre>
+<h2 id="javascript">JavaScript</h2>
+<h3 id="js%E4%B8%AD%E7%9A%84%E5%BC%B9%E7%AA%97%E6%93%8D%E4%BD%9C">JS中的弹窗操作</h3>
+<pre class="hljs"><code><div><span class="hljs-comment">//推荐位置</span>
+<span class="hljs-comment">/* js中3类弹框 */</span>
+<span class="hljs-comment">/* 1.alert 警告弹框 alter是数据库修改表格的操作命令 */</span>
+<span class="hljs-comment">//window.alert("Hello!!");</span>
+
+<span class="hljs-comment">//alert("你好！！");</span>
+
+<span class="hljs-comment">/* 2.confirm 确定取消 */</span>
+<span class="hljs-keyword">var</span> flag = confirm(<span class="hljs-string">"你好吗？"</span>);
+<span class="hljs-keyword">if</span>(flag){
+    alert(<span class="hljs-string">"超级棒！！"</span>);
+}<span class="hljs-keyword">else</span>{
+    alert(<span class="hljs-string">"失恋了！！"</span>);
+}
+
+<span class="hljs-comment">/* 3.prompt 带输入框的确定取消按钮 */</span>
+<span class="hljs-keyword">var</span> num = prompt(<span class="hljs-string">"你爱Java几遍？"</span>,<span class="hljs-number">100</span>);
+
+<span class="hljs-keyword">for</span>(<span class="hljs-keyword">var</span> i =<span class="hljs-number">0</span>;i&lt;num;i++){
+    <span class="hljs-built_in">document</span>.write(<span class="hljs-string">"我爱Java"</span> + <span class="hljs-string">"&lt;br&gt;"</span>)
+}
+</div></code></pre>
+<h3 id="js%E4%B8%AD%E6%97%A5%E6%9C%9F%E6%93%8D%E4%BD%9C">JS中日期操作</h3>
+<pre class="hljs"><code><div><span class="hljs-comment">/* js中的日期 操作 */</span>
+<span class="hljs-keyword">var</span> date = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>();<span class="hljs-comment">//类的首字母需要大写 ！！</span>
+<span class="hljs-built_in">document</span>.write(<span class="hljs-string">"日期 + 时间 ："</span> + date.toLocaleString() + <span class="hljs-string">"&lt;br&gt;"</span> );
+<span class="hljs-built_in">document</span>.write(<span class="hljs-string">"日期 ："</span> + date.toLocaleDateString() + <span class="hljs-string">"&lt;br&gt;"</span> );
+<span class="hljs-built_in">document</span>.write(<span class="hljs-string">"时间 ："</span> + date.toLocaleTimeString() + <span class="hljs-string">"&lt;br&gt;"</span> );
+<span class="hljs-built_in">document</span>.write(<span class="hljs-string">"年 ："</span> + date.getFullYear() + <span class="hljs-string">"&lt;br&gt;"</span> );
+<span class="hljs-comment">/* 月份从0开始 */</span>
+<span class="hljs-built_in">document</span>.write(<span class="hljs-string">"月 ："</span> + date.getMonth() + <span class="hljs-string">"&lt;br&gt;"</span> );
+<span class="hljs-built_in">document</span>.write(<span class="hljs-string">"小时 ："</span> + date.getHours() + <span class="hljs-string">"&lt;br&gt;"</span> );
+</div></code></pre>
+<h3 id="js%E4%B8%AD%E7%9A%84%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B">JS中的数据类型</h3>
+<pre class="hljs"><code><div><span class="hljs-comment">/* js是弱类型语言，所有变量都是用过var修饰，但是 有隐藏数据类型 */</span>
+<span class="hljs-keyword">var</span> i = <span class="hljs-number">10</span>;
+<span class="hljs-built_in">document</span>.write(<span class="hljs-string">"i 的类型 "</span>+<span class="hljs-keyword">typeof</span>(i) + <span class="hljs-string">"&lt;br&gt;"</span>);
+<span class="hljs-keyword">var</span> i = <span class="hljs-number">12.34</span>;
+<span class="hljs-built_in">document</span>.write(<span class="hljs-string">"i 的类型 "</span>+<span class="hljs-keyword">typeof</span>(i) + <span class="hljs-string">"&lt;br&gt;"</span>);
+<span class="hljs-keyword">var</span> i = <span class="hljs-string">"12345"</span>;
+<span class="hljs-built_in">document</span>.write(<span class="hljs-string">"i 的类型 "</span>+<span class="hljs-keyword">typeof</span>(i) + <span class="hljs-string">"&lt;br&gt;"</span>);
+<span class="hljs-keyword">var</span> i = <span class="hljs-literal">true</span>;
+<span class="hljs-built_in">document</span>.write(<span class="hljs-string">"i 的类型 "</span>+<span class="hljs-keyword">typeof</span>(i) + <span class="hljs-string">"&lt;br&gt;"</span>);
+<span class="hljs-keyword">var</span> i = <span class="hljs-keyword">new</span> <span class="hljs-built_in">String</span>();<span class="hljs-comment">//这里的String  开头代码要大写！！</span>
+<span class="hljs-built_in">document</span>.write(<span class="hljs-string">"i 的类型 "</span>+<span class="hljs-keyword">typeof</span>(i) + <span class="hljs-string">"&lt;br&gt;"</span>);
+<span class="hljs-keyword">var</span> j;
+<span class="hljs-built_in">document</span>.write(<span class="hljs-string">"j 的类型 "</span>+<span class="hljs-keyword">typeof</span>(j) + <span class="hljs-string">"&lt;br&gt;"</span>);
+<span class="hljs-built_in">document</span>.write(<span class="hljs-string">"k 的类型 "</span>+<span class="hljs-keyword">typeof</span>(k) + <span class="hljs-string">"&lt;br&gt;"</span>);
+<span class="hljs-keyword">var</span> f = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{};<span class="hljs-comment">//function 要把结构写全(){},否则无法解析，整个页面出错</span>
+<span class="hljs-built_in">document</span>.write(<span class="hljs-string">"f 的类型 "</span>+<span class="hljs-keyword">typeof</span>(f) + <span class="hljs-string">"&lt;br&gt;"</span>);
+</div></code></pre>
+<h3 id="js%E4%B8%AD%E7%9A%84%E6%95%B0%E5%80%BC%E6%93%8D%E4%BD%9C">JS中的数值操作</h3>
+<pre class="hljs"><code><div><span class="hljs-comment">/* js中的数值 操作 */</span>
+<span class="hljs-keyword">var</span> num = <span class="hljs-number">1234.55645</span>;
+<span class="hljs-comment">/* 保留小数点2位,并四舍五入*/</span>
+<span class="hljs-built_in">document</span>.write(<span class="hljs-string">"to fixed "</span> + num.toFixed(<span class="hljs-number">2</span>) + <span class="hljs-string">"&lt;br&gt;"</span>);
+<span class="hljs-comment">/* 小数转整数 */</span>
+<span class="hljs-built_in">document</span>.write(<span class="hljs-string">"parseInt "</span> + <span class="hljs-built_in">parseInt</span>(num) + <span class="hljs-string">"&lt;br&gt;"</span>)
+<span class="hljs-comment">/* 字符串转int */</span>
+<span class="hljs-keyword">var</span> i = <span class="hljs-number">10</span>;
+<span class="hljs-keyword">var</span> j = <span class="hljs-string">"10"</span>;
+<span class="hljs-keyword">var</span> sum = i + <span class="hljs-built_in">parseInt</span>(j);
+<span class="hljs-built_in">document</span>.write(<span class="hljs-string">"sum "</span> + sum + <span class="hljs-string">" &lt;br&gt;"</span>);
+<span class="hljs-comment">/* 取1-10随机数 */</span>
+<span class="hljs-built_in">document</span>.write(<span class="hljs-string">"随机数： "</span> + <span class="hljs-built_in">parseInt</span>( <span class="hljs-built_in">Math</span>.random() * <span class="hljs-number">10</span> + <span class="hljs-number">1</span> )  + <span class="hljs-string">"&lt;br&gt;"</span>)
+<span class="hljs-comment">/* 圆的面积 */</span>
+<span class="hljs-built_in">document</span>.write(<span class="hljs-string">"圆的面积; "</span> + <span class="hljs-built_in">Math</span>.PI * <span class="hljs-built_in">Math</span>.pow(<span class="hljs-number">10</span>/<span class="hljs-number">2</span>,<span class="hljs-number">2</span>)+ <span class="hljs-string">"&lt;br&gt;"</span>)
+</div></code></pre>
+<h3 id="js%E4%B8%AD%E7%9A%84%E6%95%B0%E7%BB%84%E6%93%8D%E4%BD%9C">JS中的数组操作</h3>
+<pre class="hljs"><code><div><span class="hljs-comment">/* js中的数组 操作 */</span>
+<span class="hljs-keyword">var</span> arr = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Array</span>();
+<span class="hljs-comment">/* 数组赋值，支持栈的方式 */</span>
+arr.push(<span class="hljs-string">"aa"</span>);
+arr.push(<span class="hljs-string">"bb"</span>);
+arr.push(<span class="hljs-string">"cc"</span>);
+<span class="hljs-comment">/* 遍历数组 */</span>
+<span class="hljs-keyword">for</span>(<span class="hljs-keyword">var</span> i <span class="hljs-keyword">of</span> arr){
+    <span class="hljs-built_in">document</span>.write(i + <span class="hljs-string">"&lt;br&gt;"</span>);
+}
+<span class="hljs-comment">/* 出栈 */</span>
+<span class="hljs-built_in">document</span>.write(<span class="hljs-string">"出栈："</span> + arr.pop() + <span class="hljs-string">"&lt;br&gt;"</span>);
+<span class="hljs-comment">/* 遍历数组 */</span>
+<span class="hljs-keyword">for</span>(<span class="hljs-keyword">var</span> i <span class="hljs-keyword">of</span> arr){
+    <span class="hljs-built_in">document</span>.write(i + <span class="hljs-string">"&lt;br&gt;"</span>);
+}
+<span class="hljs-keyword">var</span> nums = [<span class="hljs-number">5</span>,<span class="hljs-number">4</span>,<span class="hljs-number">7</span>,<span class="hljs-number">9</span>,<span class="hljs-number">1</span>];
+nums[<span class="hljs-number">0</span>] = <span class="hljs-number">2</span>;
+<span class="hljs-comment">/* 排序 */</span>
+nums.sort();
+<span class="hljs-comment">/* 反转 */</span>
+nums.reverse();
+<span class="hljs-built_in">document</span>.write(<span class="hljs-string">"打印数组："</span> + nums.toString() + <span class="hljs-string">"&lt;br&gt;"</span>);
+</div></code></pre>
+<h3 id="js%E4%B8%AD%E7%9A%84%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%93%8D%E4%BD%9C">JS中的字符串操作</h3>
+<pre class="hljs"><code><div><span class="hljs-comment">/* js中的字符串 操作 */</span>
+<span class="hljs-keyword">var</span> num = <span class="hljs-string">"cabcdefg"</span>;
+<span class="hljs-comment">/* 去单个字符操作 */</span>
+<span class="hljs-built_in">document</span>.write(<span class="hljs-string">"charAt "</span> + num.charAt(<span class="hljs-number">2</span>) + <span class="hljs-string">"&lt;br&gt;"</span>);
+<span class="hljs-comment">/*  取字符串长度 */</span>
+<span class="hljs-built_in">document</span>.write(<span class="hljs-string">"length: "</span> + num.length + <span class="hljs-string">"&lt;br&gt;"</span>);
+<span class="hljs-comment">/* 转换为大写 */</span>
+<span class="hljs-built_in">document</span>.write(<span class="hljs-string">"toUpperCase "</span> + num.toUpperCase() + <span class="hljs-string">"&lt;br&gt;"</span>);
+<span class="hljs-comment">/* 判断是否包含某个字符串，包含返回匹配到的第一个下标，不包含返回-1 */</span>
+<span class="hljs-built_in">document</span>.write(<span class="hljs-string">"indexOf "</span> + num.indexOf(<span class="hljs-string">"abcc"</span>) + <span class="hljs-string">"&lt;br&gt;"</span>);
+<span class="hljs-comment">/* 字符串的截取 */</span>
+<span class="hljs-comment">/* 一个参数时，从参数位置开始截取，一直到最后一位 */</span>
+<span class="hljs-built_in">document</span>.write(<span class="hljs-string">"substring: "</span> + num.substring(<span class="hljs-number">1</span>) + <span class="hljs-string">"&lt;br&gt;"</span>);
+<span class="hljs-comment">/* 两个参数，从第一个参数截取到第二个参数的前面一位，前包后不包 */</span>
+<span class="hljs-built_in">document</span>.write(<span class="hljs-string">"substring: "</span> + num.substring(<span class="hljs-number">2</span>,<span class="hljs-number">4</span>) + <span class="hljs-string">"&lt;br&gt;"</span>);
+<span class="hljs-comment">/* 字符串的拼接 */</span>
+<span class="hljs-built_in">document</span>.write(<span class="hljs-string">"substring: "</span> + num + <span class="hljs-string">"123"</span> + <span class="hljs-string">"&lt;br&gt;"</span>);
+<span class="hljs-built_in">document</span>.write(<span class="hljs-string">"substring: "</span> + num.concat(<span class="hljs-string">"888"</span>) + <span class="hljs-string">"&lt;br&gt;"</span>);
+<span class="hljs-comment">/* 字符串的分割 */</span>
+<span class="hljs-keyword">var</span> str = <span class="hljs-string">"aaa,bbb,ccc,ddd"</span>;
+<span class="hljs-keyword">var</span> strs = str.split(<span class="hljs-string">","</span>);
+<span class="hljs-comment">/* 遍历数组 */</span>
+<span class="hljs-keyword">for</span>(<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>;i&lt;strs.length;i++){
+    <span class="hljs-built_in">document</span>.write(strs[i] + <span class="hljs-string">"&lt;br&gt;"</span>);
+}
+<span class="hljs-built_in">document</span>.write(<span class="hljs-string">"&lt;hr&gt;"</span>);
+<span class="hljs-comment">/* 遍历数组 */</span>
+<span class="hljs-keyword">for</span>(<span class="hljs-keyword">var</span> i <span class="hljs-keyword">in</span> strs){
+    <span class="hljs-built_in">document</span>.write(strs[i] + <span class="hljs-string">"&lt;br&gt;"</span>);
+}
+<span class="hljs-built_in">document</span>.write(<span class="hljs-string">"&lt;hr&gt;"</span>);
+<span class="hljs-comment">/* 遍历数组 */</span>
+<span class="hljs-keyword">for</span>(<span class="hljs-keyword">var</span> i <span class="hljs-keyword">of</span> strs){
+    <span class="hljs-built_in">document</span>.write(i + <span class="hljs-string">"&lt;br&gt;"</span>);
+}
+</div></code></pre>
+<h3 id="js%E4%B8%AD%E7%9A%84%E5%B0%8F%E7%9F%A5%E8%AF%86%E7%82%B9">JS中的小知识点</h3>
+<pre class="hljs"><code><div><span class="hljs-comment">/* js中的小知识点 */</span>
+<span class="hljs-keyword">var</span> num = <span class="hljs-string">"3+2"</span>;
+<span class="hljs-built_in">document</span>.write(num + <span class="hljs-string">"&lt;br&gt;"</span>);
+<span class="hljs-comment">//还原原本的意思</span>
+<span class="hljs-built_in">document</span>.write(<span class="hljs-built_in">eval</span>(num));
+<span class="hljs-built_in">document</span>.write(<span class="hljs-string">"&lt;hr&gt;"</span>);
+<span class="hljs-comment">/*js 中 == 与 === 的区别*/</span>
+<span class="hljs-keyword">var</span> i = <span class="hljs-number">123</span>;
+<span class="hljs-keyword">var</span> j = <span class="hljs-string">"123"</span>;
+<span class="hljs-comment">/* == 比较的内容是否一致 */</span>
+<span class="hljs-built_in">document</span>.write(i == j);
+<span class="hljs-built_in">document</span>.write(<span class="hljs-string">"&lt;br&gt;"</span>);
+<span class="hljs-comment">/* === 比较的是内容和类型是否都一致 */</span>
+<span class="hljs-built_in">document</span>.write(i === j);
+</div></code></pre>
+<h3 id="js%E4%B8%AD%E5%8F%98%E9%87%8F%E7%9A%84%E4%BD%9C%E7%94%A8%E5%9F%9F">JS中变量的作用域</h3>
+<pre class="hljs"><code><div><span class="hljs-comment">/* JS中变量的作用域 */</span>
+<span class="hljs-comment">/* 在方法中，加上var 是局部变量，作用域就在该方法中 */</span>
+<span class="hljs-comment">/* 在方法中，在方法外没定义，方法中有没加上var的变量为全局变量，作用域在整个js上 */</span>
+<span class="hljs-keyword">var</span> dis = <span class="hljs-number">100</span>
+<span class="hljs-keyword">var</span> i =<span class="hljs-number">10</span>;
+<span class="hljs-keyword">var</span> j =<span class="hljs-number">20</span>;
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">sum</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-comment">//j = 5;</span>
+    test();
+    <span class="hljs-comment">//alert(i+j);</span>
+    alert(x+j);
+}
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">test</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-comment">//j =5;//改变j的值</span>
+    <span class="hljs-keyword">var</span> j=<span class="hljs-number">5</span>;
+    <span class="hljs-keyword">var</span> x = <span class="hljs-number">3</span>;
+}
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">$</span>(<span class="hljs-params">name</span>)</span>{
+    <span class="hljs-keyword">return</span> <span class="hljs-built_in">document</span>.getElementsByTagName(name);
+}
+test();
+sum();
+<span class="hljs-comment">/* 1.setTimeout ：多久之后执行一次 */</span>
+<span class="hljs-comment">//setTimeout(test,3000);</span>
+<span class="hljs-comment">/* 2.setInterval : 每隔多久执行一次 */</span>
+<span class="hljs-comment">//var x = setInterval(showTime, 500);</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">stopTime</span>(<span class="hljs-params"></span>)</span>{
+    clearInterval(x);
+    date.toLocaleStrign
+}
+</div></code></pre>
+<h3 id="js%E4%B8%AD%E6%96%B9%E6%B3%95%E7%9A%84%E5%87%A0%E7%A7%8D%E5%86%99%E6%B3%95">JS中方法的几种写法</h3>
+<pre class="hljs"><code><div><span class="hljs-comment">/* 方法的第一种写法 */</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">test</span>(<span class="hljs-params"></span>)</span>{
+    alert(<span class="hljs-number">123</span>);
+}
+<span class="hljs-comment">//test();</span>
+<span class="hljs-comment">//带参数的方法，不需要再参数前面加上var</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">test</span>(<span class="hljs-params">i, j</span>)</span>{
+    alert(i);
+}
+<span class="hljs-comment">//test("aa",1332);</span>
+<span class="hljs-comment">//有返回值的方法</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">test</span>(<span class="hljs-params">i</span>)</span>{
+    <span class="hljs-keyword">return</span> i;
+    <span class="hljs-keyword">return</span> <span class="hljs-string">"123"</span>;<span class="hljs-comment">//第二个return永远走不到，因为在return之后就不在继续执行了</span>
+}
+<span class="hljs-comment">//alert(test("1111"));</span>
+<span class="hljs-comment">/* 方法的第二种说法 */</span>
+<span class="hljs-keyword">var</span> test01 =<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+    alert(<span class="hljs-number">555</span>);
+}
+test01();
+</div></code></pre>
+<h3 id="js%E4%B8%AD%E7%9A%84%E5%B0%81%E8%A3%85%E7%B1%BB%E5%92%8C%E5%AF%B9%E8%B1%A1">JS中的封装类和对象</h3>
+<pre class="hljs"><code><div><span class="hljs-comment">/* JS中opp 封装 类 与 对象 */</span>
+<span class="hljs-comment">/* JS中成为闭包 */</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Student</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-comment">/* 属性 */</span>
+    <span class="hljs-keyword">this</span>.name = <span class="hljs-string">"TJ"</span>;
+    <span class="hljs-keyword">this</span>.sex = <span class="hljs-string">"男"</span>;
+    <span class="hljs-keyword">this</span>.age = <span class="hljs-number">22</span>;
+    <span class="hljs-comment">/* 方法 */</span>
+    <span class="hljs-keyword">this</span>.study=<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+        alert(<span class="hljs-keyword">this</span>.name + <span class="hljs-string">"爱学习"</span>);
+    }
+}
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Student</span>(<span class="hljs-params">name,sex,age</span>)</span>{
+    <span class="hljs-keyword">this</span>.name = name;
+    <span class="hljs-keyword">this</span>.sex = sex;
+    <span class="hljs-keyword">this</span>.age = age;
+    <span class="hljs-keyword">this</span>.eat = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+        alert(<span class="hljs-keyword">this</span>.name + <span class="hljs-string">"爱吃炸鸡啊！"</span>);
+    }
+}
+<span class="hljs-comment">//var stu = new Student();</span>
+<span class="hljs-comment">//stu.study();</span>
+<span class="hljs-keyword">var</span> stu = <span class="hljs-keyword">new</span> Student(<span class="hljs-string">"张昕宸"</span>, <span class="hljs-string">"男"</span>, <span class="hljs-string">"22"</span>);
+stu.eat();
+alert(stu.age);
+</div></code></pre>
+<h3 id="js%E4%B8%AD%E6%94%B9%E5%8F%98%E6%A0%87%E7%AD%BE%E6%A0%B7%E5%BC%8F">JS中改变标签样式</h3>
+<pre class="hljs"><code><div><span class="hljs-comment">/* JS中改变标签样式 */</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">changDIV</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> obj = <span class="hljs-built_in">document</span>.getElementsByTagName(<span class="hljs-string">"div"</span>)[<span class="hljs-number">0</span>];
+    obj.style.width = <span class="hljs-string">"200px"</span>;
+    obj.style.height = <span class="hljs-string">"200px"</span>;
+    obj.style.backgroundcolor=<span class="hljs-string">"green"</span>;
+}
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">circleDiv</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> obj = <span class="hljs-built_in">document</span>.getElementsByTagName(<span class="hljs-string">"div"</span>)[<span class="hljs-number">0</span>];
+    obj.style.borderRadius=<span class="hljs-string">"80px"</span>;
+    obj.style.marginLeft=<span class="hljs-string">"80px"</span>;
+}
+<span class="hljs-comment">/* 展示密码框 */</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">showPasssword</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> obj = <span class="hljs-built_in">document</span>.getElementsByTagName(<span class="hljs-string">"input"</span>)[<span class="hljs-number">0</span>];
+    obj.type=<span class="hljs-string">"text"</span>;
+}
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">showPass</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> obj = <span class="hljs-built_in">document</span>.getElementsByTagName(<span class="hljs-string">"input"</span>)[<span class="hljs-number">0</span>];
+    obj.type=<span class="hljs-string">"text"</span>;
+}
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">hiddPass</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> obj = <span class="hljs-built_in">document</span>.getElementsByTagName(<span class="hljs-string">"input"</span>)[<span class="hljs-number">0</span>];
+    obj.type=<span class="hljs-string">"password"</span>;
+}
+</div></code></pre>
+<h3 id="%E5%90%84%E7%B1%BB%E7%9B%91%E5%90%AC%E4%BA%8B%E4%BB%B6">各类监听事件</h3>
+<pre class="hljs"><code><div><span class="hljs-comment">/* JS中常用的监听事件 */</span>
+<span class="hljs-comment">/* 单机事件 */</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">bclick</span>(<span class="hljs-params"></span>)</span>{
+    alert(<span class="hljs-string">"单击事件！"</span>);
+}
+<span class="hljs-comment">/* 双击事件 */</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">dbclick</span>(<span class="hljs-params"></span>)</span>{
+    alert(<span class="hljs-string">"双击事件！"</span>);
+}
+<span class="hljs-comment">/* 鼠标移入事件 */</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">divover</span>(<span class="hljs-params"></span>)</span>{
+    alert(<span class="hljs-string">"鼠标移入事件！"</span>);
+}
+<span class="hljs-comment">/* 鼠标移出时间 */</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">divOut</span>(<span class="hljs-params"></span>)</span>{
+    alert(<span class="hljs-string">"鼠标移出事件！"</span>);
+}
+<span class="hljs-comment">/* 鼠标获取光标事件 */</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">f</span>(<span class="hljs-params"></span>)</span>{
+    alert(<span class="hljs-string">"获取光标事件！"</span>);
+}
+<span class="hljs-comment">/* 丢失光标事件 */</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">b</span>(<span class="hljs-params"></span>)</span>{
+    alert(<span class="hljs-string">"丢失光标！"</span>);
+}
+<span class="hljs-comment">/* 内容改变事件 */</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">changeoption</span>(<span class="hljs-params"></span>)</span>{
+    alert(<span class="hljs-string">"内容改变！"</span>);
+}
+</div></code></pre>
+<h3 id="js%E4%B8%AD%E8%8E%B7%E5%8F%96%E6%A0%87%E7%AD%BE%E7%9A%84%E5%8F%96%E5%80%BC%E4%B8%8E%E8%B5%8B%E5%80%BC">JS中获取标签的取值与赋值</h3>
+<pre class="hljs"><code><div><span class="hljs-comment">/* JS中获各类标签的取值和赋值 */</span>
+<span class="hljs-comment">/* jQuery的写法$ 也可以用 _ 、aaa  类似于函数调用 */</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">$</span>(<span class="hljs-params">tagName</span>)</span>{
+    <span class="hljs-keyword">return</span> <span class="hljs-built_in">document</span>.getElementsByTagName(tagName);<span class="hljs-comment">//标签对象数组</span>
+}
+<span class="hljs-comment">/* DIV的取值赋值 */</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">setDiv</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-comment">//document.getElementsByTagName("div")[0].innerHTML=prompt("输入DIV的值","");</span>
+    $(<span class="hljs-string">"div"</span>)[<span class="hljs-number">0</span>].innerHTML = prompt(<span class="hljs-string">"输入DIV的值"</span>,<span class="hljs-string">""</span>);
+}
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getDiv</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-comment">//alert(document.getElementsByTagName("div")[0].innerHTML);</span>
+    alert($(<span class="hljs-string">"div"</span>)[<span class="hljs-number">0</span>].innerHTML);
+}
+<span class="hljs-comment">/* 文本框的取值赋值 */</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">setText</span>(<span class="hljs-params"></span>)</span>{
+    $(<span class="hljs-string">"input"</span>)[<span class="hljs-number">0</span>].value = <span class="hljs-string">"大可爱"</span>;
+}
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getText</span>(<span class="hljs-params"></span>)</span>{
+    alert($(<span class="hljs-string">"input"</span>)[<span class="hljs-number">0</span>].value);
+}
+<span class="hljs-comment">/* 单选框取值赋值 */</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">setRadio</span>(<span class="hljs-params"></span>)</span>{
+    $(<span class="hljs-string">"input"</span>)[<span class="hljs-number">2</span>].checked=<span class="hljs-literal">true</span>;
+}
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getRadio</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> objs = <span class="hljs-built_in">document</span>.getElementsByName(<span class="hljs-string">"sex"</span>);
+    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">var</span> obj <span class="hljs-keyword">of</span> objs){
+        <span class="hljs-keyword">if</span>(obj.checked){
+            alert(obj.value);
+            <span class="hljs-keyword">return</span>;
+        }
+    }
+}
+<span class="hljs-comment">/* checkbox的取值赋值 */</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">setCheckbox</span>(<span class="hljs-params"></span>)</span>{
+    $(<span class="hljs-string">"input"</span>)[<span class="hljs-number">5</span>].checked=<span class="hljs-literal">true</span>;
+    $(<span class="hljs-string">"input"</span>)[<span class="hljs-number">6</span>].checked=<span class="hljs-literal">true</span>;
+}
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getCheckbox</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> objs = <span class="hljs-built_in">document</span>.getElementsByName(<span class="hljs-string">"hobby"</span>);
+    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">var</span> obj <span class="hljs-keyword">of</span> objs){
+        <span class="hljs-keyword">if</span>(obj.checked){
+            alert(obj.value);
+        }
+    }
+}
+<span class="hljs-comment">/* 全选 */</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">checkAll</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> objs = <span class="hljs-built_in">document</span>.getElementsByName(<span class="hljs-string">"hobby"</span>);
+    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">var</span> obj <span class="hljs-keyword">of</span> objs){
+        obj.checked = $(<span class="hljs-string">"input"</span>)[<span class="hljs-number">3</span>].checked;
+    }
+}
+<span class="hljs-comment">/* 下拉框选项 */</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">setselect</span>(<span class="hljs-params"></span>)</span>{
+    $(<span class="hljs-string">"select"</span>)[<span class="hljs-number">0</span>].selectedIndex = <span class="hljs-number">2</span>;
+}
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getselect</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> selObj = $(<span class="hljs-string">"select"</span>)[<span class="hljs-number">0</span>];<span class="hljs-comment">//这个返回的select是一个数组，需要对数组元素进行选取getElementsByTagName()</span>
+    <span class="hljs-comment">//alert(selObj.selectedIndex);</span>
+    alert(selObj[selObj.selectedIndex].value);
+}
+</div></code></pre>
+<h3 id="js%E4%B8%AD%E8%8E%B7%E5%8F%96%E6%A0%87%E7%AD%BE%E5%AF%B9%E8%B1%A1%E7%9A%84%E4%B8%89%E7%A7%8D%E6%96%B9%E6%B3%95">JS中获取标签对象的三种方法</h3>
+<pre class="hljs"><code><div><span class="hljs-comment">/* JS中获取标签对象的三种方法 */</span>
+<span class="hljs-comment">/* 通过ID获取标签对象 -- 只能获取到一个对象 */</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getDivById</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> divObj = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">"d1"</span>);
+    alert(divObj.innerHTML);
+}
+<span class="hljs-comment">/* 通过Name获取，能获取到多个对象 getElementsByName 中间的是 Elements 与 getElemetById 中间的 Element 有区别 */</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getDivByName</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> divObjs = <span class="hljs-built_in">document</span>.getElementsByName(<span class="hljs-string">"dn"</span>);
+    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">var</span> boj <span class="hljs-keyword">of</span> divObjs){
+        alert(boj.innerHTML);
+    }
+}
+<span class="hljs-comment">/* 通过标签名获取标签对象 -- 获取多个对象 */</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getDivByTagName</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> divObjs = <span class="hljs-built_in">document</span>.getElementsByTagName(<span class="hljs-string">"div"</span>);
+    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">var</span> obj <span class="hljs-keyword">of</span> divObjs){
+        alert(obj.innerHTML);
+    }
+}
+</div></code></pre>
+<h3 id="js%E4%B8%AD%E7%9A%84%E4%B8%A4%E7%A7%8D%E5%AE%9A%E6%97%B6%E5%99%A8">JS中的两种定时器</h3>
+<pre class="hljs"><code><div><span class="hljs-comment">/* JS中两种定时器 */</span>
+<span class="hljs-keyword">var</span> dis = <span class="hljs-number">100</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">$</span>(<span class="hljs-params">name</span>)</span>{
+    <span class="hljs-keyword">return</span> <span class="hljs-built_in">document</span>.getElementsByTagName(name);
+}
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">showTime</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-comment">//var date = new Date();</span>
+    <span class="hljs-comment">//$("div")[0].innerHTML = date.toLocaleString();</span>
+    <span class="hljs-keyword">var</span> obj = <span class="hljs-built_in">document</span>.getElementsByTagName(<span class="hljs-string">"div"</span>)[<span class="hljs-number">0</span>];
+    obj.style.marginLeft=obj.style.marginLeft+dis;
+    dis = dis +<span class="hljs-number">100</span>;
+}
+<span class="hljs-comment">/* 1.setTimeout ：多久之后执行一次 */</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">test</span>(<span class="hljs-params"></span>)</span>{
+    alert(<span class="hljs-string">"2"</span>);
+}
+<span class="hljs-comment">//setTimeout(test,3000);</span>
+<span class="hljs-comment">/* 2.setInterval : 每隔多久执行一次 */</span>
+<span class="hljs-keyword">var</span> x = setInterval(showTime, <span class="hljs-number">500</span>);
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">stopTime</span>(<span class="hljs-params"></span>)</span>{
+    clearInterval(x);
+    date.toLocaleStrign
+}
+</div></code></pre>
+<h3 id="js%E4%B8%AD%E9%9A%90%E8%97%8F%E6%A0%87%E7%AD%BE%E7%9A%84%E4%B8%A4%E7%A7%8D%E6%96%B9%E5%BC%8F">JS中隐藏标签的两种方式</h3>
+<pre class="hljs"><code><div><span class="hljs-comment">/* JS中隐藏标签的两种方法 */</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">$</span>(<span class="hljs-params">name</span>)</span>{
+    <span class="hljs-keyword">return</span> <span class="hljs-built_in">document</span>.getElementsByTagName(name);
+}
+<span class="hljs-comment">/* 1.占位隐藏 */</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">viHide</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> yellow = $(<span class="hljs-string">"div"</span>)[<span class="hljs-number">1</span>];
+    yellow.style.visibility = <span class="hljs-string">"hidden"</span>;
+}
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">viShow</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> yellow = $(<span class="hljs-string">"div"</span>)[<span class="hljs-number">1</span>];
+    yellow.style.visibility = <span class="hljs-string">"visible"</span>;
+}
+<span class="hljs-comment">/* 2.不占位隐藏 */</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">disHide</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> yellow = $(<span class="hljs-string">"div"</span>)[<span class="hljs-number">1</span>];
+    yellow.style.display = <span class="hljs-string">"none"</span>;
+}
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">disShow</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> yellow = $(<span class="hljs-string">"div"</span>)[<span class="hljs-number">1</span>];
+    yellow.style.display = <span class="hljs-string">"block"</span>;
+}
+</div></code></pre>
+<h2 id="jquery">jQuery</h2>
+<pre class="hljs"><code><div>/* jQuery 本质就是JS，它简化了JS中很多繁琐的操作，让JS操作变得简单 */
+/* jQuery 代码必须放入  ready  该方法中,是等 文档流、函数 加载好 */
+//引入jQuery包，放在标签html里
+
+&lt;script src=&quot;./js/jquery-3.4.1.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+
+//复杂模式,必须要放在ready中，意思是等待文档流加载完成，才能执行jQuery操作
+$(document).ready(function(){
+    alert(&quot;123&quot;);
+})
+
+//所有的操作均需要放入下面代码格式
+$(function(){
+    /*jQuery代码操作*/
+})
+
+</div></code></pre>
+<h3 id="jquery%E7%9B%91%E5%90%AC%E5%99%A8">jQuery监听器</h3>
+<pre class="hljs"><code><div><span class="hljs-comment">/* jQuery常用监听事件 */</span>
+$(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-comment">/* 单击事件 */</span>
+    $(<span class="hljs-string">"button:eq(0)"</span>).click(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+        alert(<span class="hljs-string">"单击事件！"</span>);
+    })
+    <span class="hljs-comment">//双击事件</span>
+    $(<span class="hljs-string">"button:eq(1)"</span>).dblclick(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+        alert(<span class="hljs-string">"双击事件！"</span>);
+    })
+    <span class="hljs-comment">//div单击</span>
+    $(<span class="hljs-string">"div"</span>).click(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+        alert(<span class="hljs-string">"div单击"</span>);
+    })
+    <span class="hljs-comment">//鼠标移入事件</span>
+    $(<span class="hljs-string">"div"</span>).mouseover(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+        alert(<span class="hljs-string">"鼠标移入"</span>);
+    })
+    $(<span class="hljs-string">"div"</span>).mouseout(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+        alert(<span class="hljs-string">"鼠标移出"</span>);
+    })
+    <span class="hljs-comment">//获取光标事件</span>
+    $(<span class="hljs-string">"input"</span>).focus(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+        alert(<span class="hljs-string">"光标获取"</span>);
+    })
+    <span class="hljs-comment">//丢失光标事件</span>
+    $(<span class="hljs-string">"input"</span>).blur(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+        alert(<span class="hljs-string">"丢失光标"</span>);
+    })
+    <span class="hljs-comment">//内容改变</span>
+    $(<span class="hljs-string">"select"</span>).change(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+        alert(<span class="hljs-string">"内容改变了"</span>);
+    })
+})
+</div></code></pre>
+<h3 id="jquery%E7%89%B9%E6%95%88">jQuery特效</h3>
+<pre class="hljs"><code><div><span class="hljs-comment">/* jQuery常用监听事件 */</span>
+$(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-comment">//缩放 相当于不占位隐藏 display:none;</span>
+    $(<span class="hljs-string">"button:eq(0)"</span>).click(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+        $(<span class="hljs-string">"div"</span>).hide(<span class="hljs-number">5000</span>);
+    })
+    $(<span class="hljs-string">"button:eq(1)"</span>).click(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+        $(<span class="hljs-string">"div"</span>).show(<span class="hljs-number">5000</span>);
+    })
+    <span class="hljs-comment">//一个控制两个</span>
+    $(<span class="hljs-string">"button:eq(2)"</span>).click(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+        $(<span class="hljs-string">"div"</span>).toggle(<span class="hljs-number">1000</span>);
+    })
+    <span class="hljs-comment">//淡入淡出</span>
+    $(<span class="hljs-string">"button:eq(3)"</span>).click(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+        $(<span class="hljs-string">"div"</span>).fadeOut(<span class="hljs-number">2000</span>);
+    })
+    $(<span class="hljs-string">"button:eq(4)"</span>).click(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+        $(<span class="hljs-string">"div"</span>).fadeIn(<span class="hljs-number">2000</span>);
+    })
+    <span class="hljs-comment">//一个控制两个</span>
+    $(<span class="hljs-string">"button:eq(5)"</span>).click(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+        $(<span class="hljs-string">"div"</span>).fadeToggle(<span class="hljs-number">2000</span>);
+    })
+    <span class="hljs-comment">//动画变化,animate，的一个参数，采用json键值对格式，各个值之间用逗号, 值用:</span>
+    <span class="hljs-comment">//同时值不能有单位</span>
+    $(<span class="hljs-string">"button:eq(6)"</span>).click(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+        $(<span class="hljs-string">"div"</span>).animate({<span class="hljs-attr">width</span>:<span class="hljs-number">100</span>,<span class="hljs-attr">height</span>:<span class="hljs-number">100</span>},<span class="hljs-number">3000</span>)
+        .animate({<span class="hljs-attr">width</span>:<span class="hljs-number">300</span>,<span class="hljs-attr">height</span>:<span class="hljs-number">300</span>},<span class="hljs-number">3000</span>)
+        .animate({<span class="hljs-attr">borderRadius</span>:<span class="hljs-number">150</span>},<span class="hljs-number">3000</span>)
+        .animate({<span class="hljs-attr">marginLeft</span>:<span class="hljs-number">1000</span>},<span class="hljs-number">3000</span>);
+    })
+})
+</div></code></pre>
+<h3 id="jquery%E9%80%89%E6%8B%A9%E5%99%A8">jQuery选择器</h3>
+<pre class="hljs"><code><div><span class="hljs-comment">/* jQuery 常用选择器，跟css一模一样 */</span>
+<span class="hljs-comment">/* jQuery 使用选择器来获取标签,是按照代码上下的顺序执行 */</span>
+$(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-comment">/* 通过ID来获取标签对象 */</span>
+    $(<span class="hljs-string">"#d1"</span>).text(<span class="hljs-string">"aaaa"</span>);
+    <span class="hljs-comment">/* 通过class获取标签对象 */</span>
+    $(<span class="hljs-string">".dc"</span>).text(<span class="hljs-string">"bbbb"</span>);
+    <span class="hljs-comment">/* 通过标签名获取标签对象 */</span>
+    <span class="hljs-comment">//$("div").text("cccc");</span>
+    <span class="hljs-comment">/* 组合选择器 */</span>
+    $(<span class="hljs-string">"div div"</span>).text(<span class="hljs-string">"123"</span>);
+    <span class="hljs-comment">/* 伪类选择器 */</span>
+})
+</div></code></pre>
+<h3 id="jquery%E4%BC%AA%E7%B1%BB%E9%80%89%E6%8B%A9%E5%99%A8%E5%92%8C%E5%B1%9E%E6%80%A7%E9%80%89%E6%8B%A9%E5%99%A8">jQuery伪类选择器和属性选择器</h3>
+<pre class="hljs"><code><div><span class="hljs-comment">/* jQuery 常用选择器，跟css一模一样 */</span>
+<span class="hljs-comment">/* jQuery 使用选择器来获取标签,是按照代码上下的顺序执行 */</span>
+$(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-comment">/* 伪类选择器 */</span>
+    $(<span class="hljs-string">"div:first"</span>).text(<span class="hljs-string">"第一个"</span>);
+    $(<span class="hljs-string">"div:last"</span>).text(<span class="hljs-string">"最后一个"</span>);
+    <span class="hljs-comment">/* 下标从0开始 */</span>
+    $(<span class="hljs-string">"div:eq(1)"</span>).text(<span class="hljs-string">"第二个"</span>);
+    $(<span class="hljs-string">"div:eq(2)"</span>).text(<span class="hljs-string">"第三个"</span>);
+    <span class="hljs-comment">/* 属性选择器 */</span>
+    $(<span class="hljs-string">"input[name='name']"</span>).val(<span class="hljs-string">"王振"</span>);
+    $(<span class="hljs-string">"input[name='pwd']"</span>).val(<span class="hljs-string">"123"</span>);
+    <span class="hljs-comment">//除去name，和pasword</span>
+    $(<span class="hljs-string">"input[type='text'][name!='name']"</span>).val(<span class="hljs-string">"hehe"</span>);
+    <span class="hljs-comment">//所有有type的标签</span>
+    $(<span class="hljs-string">"input[type]"</span>).val(<span class="hljs-string">"a"</span>);
+    <span class="hljs-comment">//name标签以a开头的</span>
+    $(<span class="hljs-string">"input[name^='a']"</span>).val(<span class="hljs-string">"bbb"</span>);
+})
+</div></code></pre>
+<h3 id="jquery%E6%A0%87%E7%AD%BE%E9%80%89%E6%8B%A9%E5%99%A8%E5%92%8C%E4%BC%AA%E7%B1%BB%E9%80%89%E6%8B%A9%E5%99%A8">jQuery标签选择器和伪类选择器</h3>
+<pre class="hljs"><code><div>/* jQuery 常用选择器，跟css一模一样 */
+/* jQuery 使用选择器来获取标签,是按照代码上下的顺序执行 */
+$(function(){
+    /* 伪类选择器 */
+    $(&quot;div:first&quot;).text(&quot;第一个&quot;);
+    $(&quot;div:last&quot;).text(&quot;最后一个&quot;);
+
+    /* 下标从0开始 */
+    $(&quot;div:eq(1)&quot;).text(&quot;第二个&quot;);
+    $(&quot;div:eq(2)&quot;).text(&quot;第三个&quot;);
+
+    /* 属性选择器 */
+    $(&quot;input[name='name']&quot;).val(&quot;王振&quot;);
+    $(&quot;input[name='pwd']&quot;).val(&quot;123&quot;);
+
+    //除去name，和pasword
+    $(&quot;input[type='text'][name!='name']&quot;).val(&quot;hehe&quot;);
+
+    //所有有type的标签
+    $(&quot;input[type]&quot;).val(&quot;a&quot;);
+
+    //name标签以a开头的
+    $(&quot;input[name^='a']&quot;).val(&quot;bbb&quot;);
+})
+
+</div></code></pre>
+<h3 id="jquery%E4%B8%ADoop%E5%B0%81%E8%A3%85%E7%BB%A7%E6%89%BF%E5%A4%9A%E6%80%81">jQuery中OOP封装、继承、多态</h3>
+<pre class="hljs"><code><div><span class="hljs-comment">// 封装</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Student</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">this</span>.name = <span class="hljs-string">"温耀"</span>;
+    <span class="hljs-keyword">this</span>.age = <span class="hljs-number">20</span>;
+    <span class="hljs-keyword">this</span>.study=<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+        alert(<span class="hljs-keyword">this</span>.name + <span class="hljs-string">"爱学习！"</span>);
+    }
+}
+<span class="hljs-comment">/* 封装的第二种写法 */</span>
+<span class="hljs-keyword">var</span> Teacher = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">name,sex</span>)</span>{
+    <span class="hljs-keyword">this</span>.name = name;
+    <span class="hljs-keyword">this</span>.sex = sex;
+    <span class="hljs-keyword">this</span>.eat = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+        alert(<span class="hljs-keyword">this</span>.name + <span class="hljs-string">"爱吃煲仔饭！"</span>);
+    }
+}
+<span class="hljs-keyword">var</span> tea = <span class="hljs-keyword">new</span> Teacher(<span class="hljs-string">"杨老师"</span>,<span class="hljs-string">"男"</span>);
+tea.eat();
+<span class="hljs-comment">/* 封装第三种写法 相对于java中static ，无需new对象，直接类名+方法名 */</span>
+<span class="hljs-comment">/* 不能传参数，直接写死了 */</span>
+<span class="hljs-keyword">var</span> User = {
+    <span class="hljs-attr">name</span>:<span class="hljs-string">"张三"</span>,
+    <span class="hljs-attr">sex</span>:<span class="hljs-string">"男"</span>,
+    <span class="hljs-attr">age</span>:<span class="hljs-number">30</span>,
+    <span class="hljs-attr">eat</span>:<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+        alert(<span class="hljs-keyword">this</span>.name + <span class="hljs-string">"爱吃饺子！"</span>)
+    }
+}
+User.eat();
+alert(User.age);
+
+<span class="hljs-comment">// 继承</span>
+
+<span class="hljs-comment">/* JS中OOP之继承 */</span>
+<span class="hljs-comment">/* 通过JS的原型prototype 来实现 */</span>
+
+<span class="hljs-keyword">var</span> Animal = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">this</span>.name;
+    <span class="hljs-keyword">this</span>.age;
+    <span class="hljs-keyword">this</span>.eat = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+        alert(<span class="hljs-keyword">this</span>.name + <span class="hljs-string">"吃~"</span>);
+    }
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Dog</span>(<span class="hljs-params"></span>)</span>{}
+
+<span class="hljs-comment">/* 直接new一个就能继承了，prototype 是一个原型链，可以吧新的元素直接连接在对象后面，所以才叫链
+    因此实现了继承的效果，同时还可以在增加新的变量以及方法(等同于直接连接在对象链的后面)
+*/</span>
+Dog.prototype = <span class="hljs-keyword">new</span> Animal();
+Dog.prototype.sex = <span class="hljs-string">"公"</span>;
+Dog.prototype.drink=<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+    alert(<span class="hljs-string">"喝"</span>);
+}
+
+<span class="hljs-keyword">var</span> dog = <span class="hljs-keyword">new</span> Dog();
+
+dog.name = <span class="hljs-string">"旺财"</span>;
+dog.age = <span class="hljs-number">10</span>;
+dog.eat();
+dog.drink();
+alert(dog.sex);
+
+<span class="hljs-comment">// 多态</span>
+
+<span class="hljs-comment">/* JS中OOP之多仁爱·多态 */</span>
+<span class="hljs-comment">/* JS中最简单的多态 */</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">sum</span>(<span class="hljs-params">i,j</span>)</span>{
+    alert(i + j);
+}
+sum(<span class="hljs-number">2</span>,<span class="hljs-number">4</span>);
+sum(<span class="hljs-string">"2"</span>,<span class="hljs-string">"4"</span>);
+sum(<span class="hljs-literal">true</span>,<span class="hljs-literal">false</span>);<span class="hljs-comment">//true 是 1 , false 是 2</span>
+
+<span class="hljs-comment">// 多态案例</span>
+
+<span class="hljs-comment">/* JS中OOP之多态 */</span>
+<span class="hljs-comment">/* 先继承，在重写 */</span>
+<span class="hljs-keyword">var</span> Animal = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">this</span>.eat = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{};
+}
+<span class="hljs-keyword">var</span> Dog = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">this</span>.eat = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+        alert(<span class="hljs-string">"狗吃骨头~"</span>);
+    }
+}
+<span class="hljs-keyword">var</span> Cat = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">this</span>.eat = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+        alert(<span class="hljs-string">"猫吃鱼 ~"</span>);
+    }
+}
+<span class="hljs-keyword">var</span> ani = <span class="hljs-keyword">new</span> Animal();
+<span class="hljs-comment">//下面的写法，是直接创建一个新的类，并不是继承ani</span>
+<span class="hljs-comment">//Dog.prototype = new Animal();</span>
+<span class="hljs-comment">//Dog.prototype = new Animal();</span>
+<span class="hljs-comment">//这样才是继承ani，并不是再创建一个新的类</span>
+Dog.prototype = ani;
+Cat.prototype = ani;
+<span class="hljs-comment">//var dog = new Dog();</span>
+<span class="hljs-comment">//dog.eat();</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">eatAni</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> animal;
+    <span class="hljs-keyword">var</span> obj = <span class="hljs-built_in">document</span>.getElementsByName(<span class="hljs-string">"animal"</span>);
+    <span class="hljs-keyword">if</span>(obj[<span class="hljs-number">0</span>].checked){
+        <span class="hljs-comment">//狗,变量直接就接收一个实例就可以使用了。这个animal，只是一个变量</span>
+        animal = <span class="hljs-keyword">new</span> Dog();
+    }<span class="hljs-keyword">else</span>{
+        <span class="hljs-comment">//猫</span>
+        animal = <span class="hljs-keyword">new</span> Cat();
+    }
+    animal.eat();
+}
+</div></code></pre>
+<h3 id="jquery%E6%A0%87%E7%AD%BE%E6%93%8D%E4%BD%9C">jQuery标签操作</h3>
+<pre class="hljs"><code><div>/* 表单取值 */
+$(function(){
+    //before 插入标签 外面 的前面
+    $(&quot;button:eq(0)&quot;).click(function(){
+        $(&quot;div&quot;).before($(&quot;input&quot;));
+    })
+    //after 插入标签 外面 的后面
+    $(&quot;button:eq(1)&quot;).click(function(){
+        $(&quot;div&quot;).after($(&quot;input&quot;));
+    })
+
+    //prepend 插入标签 里面 的前面
+    $(&quot;button:eq(2)&quot;).click(function(){
+        $(&quot;div&quot;).prepend($(&quot;input&quot;));
+    })
+    //after 插入标签 里面 的后面
+    $(&quot;button:eq(3)&quot;).click(function(){
+        $(&quot;div&quot;).append($(&quot;input&quot;));
+    })
+
+    //select 插入新的值
+    $(&quot;button:eq(4)&quot;).click(function(){
+        $(&quot;select&quot;).append(&quot;&lt;option&gt;上海&lt;/option&gt;&quot;);
+        $(this).prop(&quot;disabled&quot;,true);
+    })
+    //select 删除 值
+    $(&quot;button:eq(5)&quot;).click(function(){
+        $(&quot;div&quot;).remove();
+    })
+    //select 清空 值
+    $(&quot;button:eq(6)&quot;).click(function(){
+        $(&quot;div&quot;).empty();
+    })
+})
+</div></code></pre>
+<h3 id="jquery%E8%A1%A8%E5%8D%95%E6%93%8D%E4%BD%9C">jQuery表单操作</h3>
+<pre class="hljs"><code><div>
+/* jQuery操作代码 */
+/* 表单取值 */
+$(function(){
+    //alert(&quot;23&quot;);
+
+    //div取值和div赋值，在于text参数，参数是多少就是多少,取值也是text的返回值
+    $(&quot;button:eq(0)&quot;).click(function(){
+        $(&quot;div&quot;).text(&quot;ans&quot;);
+    })
+    $(&quot;button:eq(1)&quot;).click(function(){
+        alert($(&quot;div&quot;).text());
+    })
+
+    //赋值网页代码，可以HTML生效
+    $(&quot;button:eq(2)&quot;).click(function(){
+        $(&quot;div&quot;).html(&quot;abc&lt;hr&gt;&quot;);
+    })
+    $(&quot;button:eq(3)&quot;).click(function(){
+        alert($(&quot;div&quot;).text());
+    })
+
+    //文本框取值 和 赋值
+    $(&quot;button:eq(4)&quot;).click(function(){
+        $(&quot;input[type='text']&quot;).val(&quot;abc&quot;);
+    })
+    $(&quot;button:eq(5)&quot;).click(function(){
+        alert($(&quot;input[type='text']&quot;).val());
+    })
+
+    //单选框取值 和 赋值
+    $(&quot;button:eq(6)&quot;).click(function(){
+        //attr只能用一次，再次使用就会 失效，返回html对象
+        //$(&quot;input[type='radio'][value='女']&quot;).attr(&quot;checked&quot;,true);
+
+        //prop 返回DOM对象
+        $(&quot;input[type='radio'][value='女']&quot;).prop(&quot;checked&quot;,true);
+    })
+    $(&quot;button:eq(7)&quot;).click(function(){
+        alert($(&quot;input[type='radio']:checked&quot;).val());
+    })
+
+    //多选框取值 和 赋值
+    $(&quot;button:eq(8)&quot;).click(function(){
+        //attr只能用一次，再次使用就会 失效，返回html对象
+        //$(&quot;input[type='radio'][value='女']&quot;).attr(&quot;checked&quot;,true);
+
+        //prop 返回DOM对象
+        $(&quot;input[value='敲代码']&quot;).prop(&quot;checked&quot;,true);
+    })
+    $(&quot;button:eq(9)&quot;).click(function(){
+        //alert($(&quot;input[type='checkbox']:checked&quot;).val());
+        $(&quot;input[name='hobby']:checked&quot;).each(function(){
+            alert($(this).val());
+        })
+    })
+
+    //下拉框取值 和 赋值
+    $(&quot;button:eq(10)&quot;).click(function(){
+        //元素下的元素，用空格隔开，即可
+        $(&quot;select option[value='北京']&quot;).prop(&quot;selected&quot;,true);
+    })
+    $(&quot;button:eq(11)&quot;).click(function(){
+
+        alert($(&quot;select option:selected&quot;).val())
+    })
+
+})
+</div></code></pre>
+<h3 id="jquery%E6%8F%92%E5%85%A5%E6%93%8D%E4%BD%9C">jQuery插入操作</h3>
+<pre class="hljs"><code><div>
+/* javascript代码 */
+/* 表单取值 */
+$(function(){
+    //点击转移到另一边
+    $(&quot;.dc div&quot;).dblclick(function(){
+        if($(this).parent().is($(&quot;.dc:eq(0)&quot;))){
+            $(&quot;.dc:eq(1)&quot;).append($(this));
+        }else{
+            $(&quot;.dc:eq(0)&quot;).append($(this));
+        }
+    })
+    //把左边的全都转移到右边
+    $(&quot;button:eq(0)&quot;).click(function(){
+        //$(&quot;.dc:eq(1)&quot;).append($(&quot;.dc div&quot;));
+        $(&quot;.dc:eq(2)&quot;).append($(&quot;.dc div&quot;));
+    })
+})
+
+/* HTML代码 */
+
+&lt;div class=&quot;dc&quot;&gt;
+    &lt;div id=&quot;d1&quot;&gt;&lt;/div&gt;
+    &lt;div id=&quot;d2&quot;&gt;&lt;/div&gt;
+    &lt;div id=&quot;d3&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;button&gt;&gt;&gt;&lt;/button&gt;
+&lt;div class=&quot;dc&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;dc&quot;&gt;&lt;/div&gt;
+
+/* CSS代码 */
+.dc{
+    width:200;
+    height:500;
+    border:2px solid black;
+    float:left;
+    margin:50px 30px;
+}
+button{
+    float:left;
+    width:100;
+    height:100;
+    margin:200px 50px;
+    font-size:50px;
+}
+div div{
+    width:195px;
+    height:50px;
+    margin:2px auto;
+}
+#d1{
+    background-color:red;
+}
+#d2{
+    background-color:green;
+}
+#d3{
+    background-color:blue;
+}
+
+</div></code></pre>
+<h3 id="jquery%E8%A7%A6%E5%8F%91%E5%99%A8">jQuery触发器</h3>
+<pre class="hljs"><code><div>
+/* javascript代码 */
+/* jQuery触发器 trigger 类似数据库的触发器操作 */
+$(function(){
+    $(&quot;button:eq(0)&quot;).click(function(){
+        alert(&quot;我被点击了&quot;);
+    })
+    function auto(){
+        //模拟点击超链接
+        //$(&quot;a span&quot;).trigger(&quot;click&quot;);
+
+        $(&quot;button&quot;).trigger(&quot;click&quot;);
+    }
+    setTimeout(auto,2000);
+})
+
+/* HTML代码 */
+
+&lt;a href=&quot;http://www.baidu.com&quot;&gt; &lt;span&gt; 百度 &lt;/span&gt; &lt;/a&gt;
+&lt;button&gt;自动点击按钮&lt;/button&gt;
+
+</div></code></pre>
+<h3 id="jquery%E5%8F%96%E5%88%AB%E5%90%8D">jQuery取别名</h3>
+<pre class="hljs"><code><div>/* jQuery起别名,$() 被占用可以使用取别名代替原来的$(),下面使用 _ 作为其别名 */
+function $(id){
+    return document.getElementsById(id);
+}
+
+var _ = jQuery.noConflict();
+_(function(){
+    _(&quot;div&quot;).text(&quot;123&quot;);
+})
+
+</div></code></pre>
+<h3 id="jquery%E7%9A%84%E6%95%B0%E6%8D%AE%E6%A0%A1%E9%AA%8C">jQuery的数据校验</h3>
+<pre class="hljs"><code><div>/* javascript代码区域 */
+/* jQuery的数据校验 */
+$(function(){
+    $(&quot;input[name='name']&quot;).blur(function(){
+        if($(this).val().length &lt; 6){
+            $(&quot;span:first&quot;).css(&quot;visibility&quot;,&quot;visible&quot;);
+        }else{
+            $(&quot;span:first&quot;).css(&quot;visibility&quot;,&quot;hidden&quot;);
+        }
+    })
+
+    $(&quot;input[name='pwd']&quot;).blur(function(){
+
+        //isNaN 可以直接判断是否是纯数字
+        if(!isNaN($(this).val())){
+            $(&quot;span:eq(1)&quot;).css(&quot;visibility&quot;,&quot;hidden&quot;);
+        }else{
+            $(&quot;span:eq(1)&quot;).css(&quot;visibility&quot;,&quot;visible&quot;);
+        }
+    })
+})
+
+/* HMTL代码区域 */
+
+账号：&lt;input type=&quot;text&quot; name=&quot;name&quot;&gt;&lt;/input&gt;&lt;span&gt;账号不能少于6位&lt;/span&gt;
+密码：&lt;input type=&quot;password&quot; name=&quot;pwd&quot;&gt;&lt;/input&gt;&lt;span&gt;密码只能为数字&lt;/span&gt;
+
+</div></code></pre>
+<h3 id="jquery%E7%9A%84%E6%95%B0%E6%8D%AE%E6%A0%A1%E9%AA%8C-validate%E6%B6%88%E6%81%AF%E6%8F%90%E7%A4%BA">jQuery的数据校验-validate消息提示</h3>
+<pre class="hljs"><code><div>//采用JSON格式
+//需要多导入两个包
+&lt;script src=&quot;./js/jquery.validate.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;./js/messages_zh.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+
+/* javascript代码区域 */
+
+//具体参考规则参数，参考菜鸟网站 https://www.runoob.com/jquery/jquery-plugin-validate.html
+//tules,校验规则
+//message，提示信息
+$(function(){
+    $(&quot;form&quot;).validate({
+        rules:{
+            nameinput:{required:true,minlength:6},
+            pwd:{digits:true}
+        },
+        messages:{
+            nameinput:{required:&quot;账号必须输入！&quot;,minlength:&quot;长度不能小于6个！&quot;},
+            pwd:{digits:&quot;密码只能为数字！&quot;}
+        }
+    })
+})
+
+/* HTML页面代码 */
+
+//后面的label是为了提示信息做准备，不写的话，也可以使用
+账号：&lt;input type=&quot;text&quot; name=&quot;nameinput&quot;&gt;&lt;/input&gt;&lt;label for=&quot;nameinput&quot;&gt;&lt;/label&gt;
+密码：&lt;input type=&quot;password&quot; name=&quot;pwd&quot;&gt;&lt;/input&gt;&lt;label for=&quot;pwd&quot;&gt;&lt;/label&gt;
+
+</div></code></pre>
+<h3 id="jquery%E7%9A%84%E5%8E%9F%E5%9E%8B%E6%93%8D%E4%BD%9C-%E4%B8%BAjquery%E6%B7%BB%E5%8A%A0%E6%96%B9%E6%B3%95">jQuery的原型操作-为jQuery添加方法</h3>
+<pre class="hljs"><code><div>        /* 为jQuery添加方法 */
+        //第一种写法,类似于JS的prototype原型链
+        $.eat = function(){
+            alert(&quot;吃放！&quot;);
+        }
+
+        //第二种写法，JSON格式添加
+        $.extend({
+            drink:function(){
+                alert(&quot;喝水！&quot;);
+            },
+            sleep:function(){
+                alert(&quot;睡觉！&quot;);
+            }
+        })
+        //第三种方法，
+        $.fn.extend({
+            sleep:function(){
+            alert(&quot;睡觉了！&quot;);
+            },
+            study:function(){
+                alert(&quot;学习！&quot;);
+            }
+        })
+
+        $time = function(){
+            var date = new Date();
+            return date.toLocaleTimeString();
+        }
+
+        $(function(){
+            $(&quot;div&quot;).study();
+            $.eat();
+            $.drink();
+            $.sleep();
+        })
+</div></code></pre>
+<h3 id="jquery%E7%9A%84%E5%8E%9F%E5%9E%8B%E6%93%8D%E4%BD%9C-%E4%B8%BA%E6%A0%87%E7%AD%BE%E5%AF%B9%E8%B1%A1%E6%B7%BB%E5%8A%A0%E6%96%B9%E6%B3%95">jQuery的原型操作-为标签对象添加方法</h3>
+<pre class="hljs"><code><div>/* javascript代码 */
+
+/* 为标签对象添加方法 */
+//第一种方法
+jQuery.prototype.eat = function(){
+    alert(&quot;吃东西！&quot;);
+}
+
+//第二种方法,fn就相当于原型链，DOM
+$.fn.drink=function(){
+    alert(&quot;喝水快乐多&quot;);
+}
+
+$(function(){
+    $(&quot;div&quot;).eat();
+    $(&quot;input&quot;).eat();
+})
+
+/* HTML 代码 */
+
+&lt;div&gt;&lt;/div&gt;
+
+&lt;input type=&quot;text&quot;&gt;&lt;/input&gt;
+
+</div></code></pre>
+<h2 id="javaeeidea%E5%BC%80%E5%8F%91">JavaEE(IDEA开发)</h2>
+<h3 id="%E4%BD%BF%E7%94%A8intillij-idea-%E7%BC%96%E8%AF%91%E5%B7%A5%E5%85%B7%E8%BF%9B%E8%A1%8C%E7%BC%96%E5%86%99">使用Intillij IDEA 编译工具进行编写</h3>
+<blockquote>
+<p>目前是下载后使用30天的免费版本，是ultimate版本，不能用社区版本 其功能太少<br>
+创建一个新项目，Project SDK 选择java 11，其他版本会有问题。选择方法：点击下拉列表，add JDK，寻找IDEA的安装目录，然后找到jar目录，有自带的JDK 11
+Java EE version : Java EE 8<br>
+tomcat 选择自己解压的tomcat目录，即可<br>
+create project from template 勾选<br>
+New project 编写名字，选择文件所在目录，目录就是项目的所有文件，一定要单建一个目录，Application server 选择tomcat 解压的地方
+开始使用</p>
+</blockquote>
+<h3 id="%E5%AD%A6%E4%B9%A0%E7%BB%93%E6%9E%84">学习结构</h3>
+<blockquote>
+<p>IDEA配置信息<br>
+简单的项目</p>
+</blockquote>
+<h3 id="%E6%B3%A8%E6%84%8F%E7%82%B9">注意点</h3>
+<h4 id="external-libraries">External Libraries</h4>
+<blockquote>
+<p>下面必须要于两个&lt;11&gt; Tocmcat x.x.x<br>
+没有的话，需要点击File &gt; project settings &gt; modules &gt; dependency &gt; 点击右边加号 &gt; libraries &gt; 然后选择选择相应的库</p>
+</blockquote>
+<h4 id="%E7%BC%93%E5%AD%98">缓存</h4>
+<blockquote>
+<p>启动之后在配置选项中的: CATALINA_BASE: 在他指向的目录中有tomcat的缓存，要清理就要去这里清理。</p>
+</blockquote>
+<h4 id="%E9%BB%98%E8%AE%A4%E7%BD%91%E9%A1%B5%E6%9C%89%E4%B8%AA-webwarexploded">默认网页有个 web_war_exploded/</h4>
+<blockquote>
+<p>这个就是需要在运行旁边的下拉框 configurations &gt; deployment然后可以改war包名称，就是访问时域名后面带的东西，如果没有更改的话，访问时连接必须要带上这个</p>
+</blockquote>
+<h4 id="tomcat%E7%9B%AE%E5%BD%95%E8%AF%B4%E6%98%8E">tomcat目录说明</h4>
+<blockquote>
+<ol>
+<li>bin :存放命令文件，sh-shell脚本文件；bat-windows的批处理文件，启动脚本等</li>
+<li>conf :存放配置文件</li>
+<li>lib: jar包</li>
+<li>logs:日志</li>
+<li>temp :临时文件</li>
+<li>webapps :存放web项目的目录</li>
+<li>work :工作目录，存放jsp转servlet的文件</li>
+</ol>
+</blockquote>
+<h4 id="%E6%93%8D%E4%BD%9C%E5%BF%AB%E6%8D%B7%E9%94%AE">操作快捷键</h4>
+<blockquote>
+<p>引包: alt + enter
+重写方法: 右击 &gt; generate(alt + insert) &gt; override Methodes(ctrl + O) &gt; 选择需要重写的方法,然后删除super调用<br>
+快速创建新的变量接收函数值(函数名.var): getPageContext().var 然后回车即可自动创建变量接收函数返回值<br>
+插件lombok: 1.File &gt; settings &gt; plugins &gt; 慢慢搜索，不可着急，转载完毕，需要重启，然后都选一个选项: File &gt; settings &gt; Build,Execution,Deployment &gt; Compiler &gt; Annotation Processors &gt; 勾选 Enable annotation processing 才能使配置对--当前项目有效---，2.需要再继续配置，才能全局生效: File &gt; close project(关闭当前项目) &gt; (IDEA主界面)configure &gt; settings &gt; Build,Execution,Deployment &gt; Compiler &gt; Annotation Processors &gt; 勾选 Enable annotation processing 才能使配置对--当所有项目有效---3.下载lombok的jar包(manven pository)，在配置一下jar包，导入jar包: Files &gt; Project Stucture &gt; Global Libraries(因为以后也要用，所以作为全局的jar包) &gt; 点击加号 &gt; 找到下载好的jar包导入 &gt; Artifacts &gt; 找到项目，点击右下角 fixed，add...(会在Output Layout下的WEB-INF目录下面创建一个lib文件然后倒入刚刚的jar包)，这个时候才可以使用lombok，使用方法:View &gt; Tool Windows &gt; Structure &gt; 然后在主界面出现Structure的界面，会显示焦点集中的窗口问件的目录结构(目前不知道左上角的Project的树状项目是怎么更改的，应该是更改显示格式，之前有一次树状目录消失了，百度到好像是配置文件删掉了，所以无法读取树状目录，大概率是这个原因)<br>
+安装自己下载的jar包: 导入jar包: Files &gt; Project Stucture &gt; Global Libraries(因为以后也要用，所以作为全局的jar包) &gt; 点击加号 &gt; 找到下载好的jar包导入 &gt; Modules &gt; 本项目的模板(name为自己的项目名) &gt; Depenencies &gt; 点击加号 &gt; libaray &gt; 从Global变量里面找到刚刚装的包 &gt; Artifacts &gt; 找到项目，点击右下角 fixed，add...(会在Output Layout下的WEB-INF目录下面创建一个lib文件然后倒入刚刚的jar包)</p>
+</blockquote>
+<h4 id="%E6%9B%B4%E6%94%B9%E6%96%87%E4%BB%B6%E5%90%8E">更改文件后</h4>
+<blockquote>
+<p>一定要重启tomcat，重新读取让其加载，但是平时的时候直接重新加载class和resource就可以了</p>
+</blockquote>
+<h4 id="get-post">GET POST</h4>
+<blockquote>
+<p>GET
+POST</p>
+</blockquote>
+<h4 id="ssh-ssm-springcloud-javaee">SSH SSM SpringCloud JavaEE</h4>
+<blockquote>
+<p>SSH   Spring  Struts2    Hibernate 过去时<br>
+SSM   Spring  SpringMVC  mybatis 主流<br>
+SpringClould  jpa(数据库，融合了Hibernate、mybatis的有点) 1W+ 年轻活力<br>
+JavaEE    JDBC    Bootstrap   原生态的web项目</p>
+</blockquote>
+<h4 id="web%E7%9B%AE%E5%BD%95%E4%B8%8B%E7%9A%84web-inf%E7%9A%84">web目录下的WEB-INF的</h4>
+<blockquote>
+<p>WEB-INF的文件属于服务器级别，只能转发(转发只能访问项目内的网页，不能访问外部网页)，不能转发(转发是用户可以随便访问的网页)<br>
+其他的页面用户可以随意访问</p>
+</blockquote>
+<h4 id="%E9%87%8D%E5%AE%9A%E5%90%91%E4%B8%8E%E8%BD%AC%E5%8F%91">重定向与转发</h4>
+<pre class="hljs"><code><div>tomcat启动时，默认不加载servlet 不会实例化、初始化(可以更改配置进行调配)， load-on-startup 在web.xml中数值改为<span class="hljs-number">1</span>
+只有用户第一次访问servlet时才会实例化、初始化、在调用service()方法，
+下一个用户或者第二次访问时直接调用service()方法，不会实例化初始化
+当servlet销毁时(也就是tomcat会缓存已经读取的文件-实例化初始化，只要redeplay，就可销毁servlet容器重新加载)
+
+重定向--客户级别
+resp.sendRedirect(<span class="hljs-string">"index.html"</span>);
+resp.sendRedirect(<span class="hljs-string">"http://www.baidu.com"</span>);
+resp.sendRedirect(<span class="hljs-string">"./view/success.html"</span>);
+
+转发--服务器级别
+req.getRequestDispatcher(<span class="hljs-string">"./WEB-INF/view/success.html"</span>).forward(req,resp);
+
+转发是由request调用，重定向是由response调用的
+转发网址不会改变，重定向网址会改变
+转发只能访问项目内的玩野，重定向可以访问第三方网站
+转发属于服务器级别，可以访问WEB-INF下的网页
+转发可以携带request参数，重定向不可以
+
+</div></code></pre>
+<h4 id="cookie%E4%BD%BF%E7%94%A8">Cookie使用</h4>
+<blockquote>
+<p>在浏览器端保存数据<br>
+在网站cookie管理中看到设置的值<br>
+还可以快捷的从F12查看application &gt; storage &gt; cookies</p>
+</blockquote>
+<pre class="hljs"><code><div><span class="hljs-comment">//1.创建Cookies 键值对  key-value</span>
+Cookie cookie = <span class="hljs-keyword">new</span> Cookie(<span class="hljs-string">"name"</span>,<span class="hljs-string">"朱某人"</span>);
+<span class="hljs-comment">//2.设置cookies的失效时间</span>
+cookie.setMaxAge(<span class="hljs-number">1</span>*<span class="hljs-number">30</span>*<span class="hljs-number">24</span>*<span class="hljs-number">60</span>*<span class="hljs-number">60</span>);
+<span class="hljs-comment">//3.把coolie发送到浏览器</span>
+resp.addCookie(cookie);
+
+<span class="hljs-comment">//读取cookie</span>
+Cookie[] cookies = req.getCookies();
+<span class="hljs-keyword">if</span>(cookies != <span class="hljs-literal">null</span>){
+    <span class="hljs-comment">//增强for循环，使用方便</span>
+    <span class="hljs-keyword">for</span>(Cookie cookie:cookies){
+        System.out.println(<span class="hljs-string">"KEY"</span>+cookie.getName()+<span class="hljs-string">",value:"</span>+cookie.getValue());
+    }
+}<span class="hljs-keyword">else</span> {
+    System.out.println(<span class="hljs-string">"--第一次登陆---没有cookie-----"</span>);
+}
+</div></code></pre>
+<h4 id="%E6%B3%A8%E8%A7%A3">注解</h4>
+<blockquote>
+<p>以@的开头的，@overrate 等，有实际用处的<br>
+下面的就是进行注解连接为 localhost/two 时即可访问新建的，没有在web.xml注册的servlet类了
+//@WebServlet(name = &quot;TwoServlet&quot;)<br>
+//@WebServlet(name = &quot;TwoServlet&quot;,value = &quot;/two&quot;)<br>
+//@WebServlet(value = &quot;/two&quot;)<br>
+//当注解里面，只有一个属性value时，value 也可以省略<br>
+@WebServlet(&quot;/two&quot;)<br>
+//注解方式可以免去需要到web.xml去注册页面，只要在连接地址上打上value的值，便可以访问到这个servlet</p>
+</blockquote>
+<h4 id="%E8%BF%87%E6%BB%A4%E5%99%A8-filter">过滤器 Filter</h4>
+<blockquote>
+<p>1.JavaEE的重要组件之一<br>
+2.用来过滤发往servlet的请求<br>
+3.是一个实现servlet</p>
+</blockquote>
+<pre class="hljs"><code><div>创建时需要注意，直接自己写的话，要自己创建文件然后导入包(是javax.servlet的包)，然后需要在web.xml配置一下  
+使用<span class="hljs-keyword">new</span> filter，是有注解的，目前需要一步步来。
+&lt;welcome-file-list&gt;
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">welcome-file</span>&gt;</span>login.html<span class="hljs-tag">&lt;/<span class="hljs-name">welcome-file</span>&gt;</span></span>
+&lt;<span class="hljs-regexp">/welcome-file-list&gt;
+
+&lt;servlet&gt;
+    &lt;servlet-name&gt;my&lt;/</span>servlet-name&gt;
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">servlet-class</span>&gt;</span>com.igeek.servlet.MyServlet<span class="hljs-tag">&lt;/<span class="hljs-name">servlet-class</span>&gt;</span></span>
+    &lt;!-- tomcat 容器启动时，就会加载servlet--&gt;
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">load-on-startup</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-name">load-on-startup</span>&gt;</span></span>
+&lt;<span class="hljs-regexp">/servlet&gt;
+&lt;servlet-mapping&gt;
+    &lt;servlet-name&gt;my&lt;/</span>servlet-name&gt;
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">url-pattern</span>&gt;</span>/xxx<span class="hljs-tag">&lt;/<span class="hljs-name">url-pattern</span>&gt;</span></span>
+    &lt;!--    <span class="hljs-regexp">/xxx 就是myservlet的请求地址，这样才会匹配 在/</span>xxx的请求，找到映射到 my上面，然后找寻servlet name为没my的就可以找到最终地址了    --&gt;
+&lt;<span class="hljs-regexp">/servlet-mapping&gt;
+
+&lt;filter&gt;
+    &lt;filter-name&gt;myFilter&lt;/</span>filter-name&gt;
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">filter-class</span>&gt;</span>com.igeek.filter.MyFilter<span class="hljs-tag">&lt;/<span class="hljs-name">filter-class</span>&gt;</span></span>
+&lt;<span class="hljs-regexp">/filter&gt;
+&lt;filter-mapping&gt;
+    &lt;filter-name&gt;myFilter&lt;/</span>filter-name&gt;
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">url-pattern</span>&gt;</span>/xxx<span class="hljs-tag">&lt;/<span class="hljs-name">url-pattern</span>&gt;</span></span>
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">url-pattern</span>&gt;</span>/two<span class="hljs-tag">&lt;/<span class="hljs-name">url-pattern</span>&gt;</span></span>
+&lt;<span class="hljs-regexp">/filter-mapping&gt;
+
+在过滤器中的doFilter函数中，需要看清函数的传入参数，在获取请求参数时，需要强制转换
+HttpServletRequest request = (HttpServletRequest)servletRequest;
+String name = request.getParameter("name");
+String pwd = request.getParameter("pwd");
+System.out.println("------顾虑器中获取的账号密码-----name:"+name + ",pwd:"+pwd);
+/</span><span class="hljs-regexp">/过滤完毕 放行
+filterChain.doFilter(servletRequest,servletResponse);
+/</span><span class="hljs-regexp">/跳转到非WEN-INF目录下的网页
+response.sendRedirect("login.html");
+/</span><span class="hljs-regexp">/跳转到非WEN-INF目录下的网页
+request.getRequestDispatcher("WEB-INF/</span>view/success.html<span class="hljs-string">").forward(request,response);
+//向网页中写入HTML代码
+response.getWriter().write("</span>Login ERROR!<span class="hljs-string">");
+</span></div></code></pre>
+<h3 id="jsp">JSP</h3>
+<blockquote>
+<p>1.JSP是java的专属网页，以.jsp结尾<br>
+2.jsp组成：HTML + CSS + JS + Java<br>
+3.jsp本质上是个servlet<br>
+4.jsp不能单独运行，需要运行在tomcat容器中</p>
+</blockquote>
+<h4 id="%E6%93%8D%E4%BD%9C%E6%B3%A8%E6%84%8F%E7%82%B9">操作注意点</h4>
+<blockquote>
+<p>导入jar包，下载到jar包的时候，Files &gt; Project Stucture &gt; Global Libraries &gt; 点击加号 &gt; 找到jar包导入<br>
+此时，会出现Artifacts有问题，可点击右下角的 fixed 就可以解决<br>
+一定不要慌乱，乱删东西，不是自己创建的坚决不能删除</p>
+</blockquote>
+<h4 id="jsp%E4%B8%89%E5%A4%A7%E6%8C%87%E4%BB%A4">JSP三大指令</h4>
+<blockquote>
+<p>1.编译器指令</p>
+<blockquote>
+<p>1.1page指令</p>
+<blockquote>
+<p>1.1.1指定编码和文件格式：&lt;%@ page contentType=&quot;text/html;charset=UTF-8&quot; language=&quot;java&quot; %&gt;<br>
+1.1.2导入jar包：&lt;%@ page import=&quot;java.util.Random&quot; %&gt;<br>
+1.1.3出错后自动跳转页面：&lt;%@ page errorPage=&quot;Error.html&quot; %&gt;
+1.2taglib指令，添加命名空间<br>
+添加jstl标签库：&lt;%@ taglib prefix=&quot;c&quot; uri=&quot;http://java.sun.com/jsp/jstl/core&quot; %&gt;<br>
+1.3静态引入：&lt;%@include file=&quot;two.jsp&quot;%&gt;</p>
+</blockquote>
+</blockquote>
+<p>2.语法指令</p>
+<blockquote>
+<p>2.1页面输出：&lt;% String name = &quot;朱颖&quot;; %&gt;  &lt;%=name%&gt;<br>
+2.2声明全局变量和方法(在前面添加!)：&lt;%! String name1 = &quot;称某人&quot;; %&gt;&lt;%! public String eat(){return &quot;---吃西瓜---&quot;;//    System.out.println(&quot;---吃西瓜---&quot;);} %&gt;&lt;%=eat()%&gt;</p>
+</blockquote>
+<p>3.动作指令</p>
+<blockquote>
+<p>3.1页面输出：&lt;% String name = &quot;朱颖&quot;; %&gt; <a href="jsp:expression">jsp:expression</a>name&lt;/jsp:expression&gt;<br>
+3.2动态导入：&lt;jsp:include page=&quot;two.jsp&quot;&gt;&lt;/jsp:include&gt;</p>
+</blockquote>
+</blockquote>
+<h4 id="%E9%9D%99%E6%80%81%E5%AF%BC%E5%85%A5%E4%B8%8E%E5%8A%A8%E6%80%81%E5%AF%BC%E5%85%A5%E7%9A%84%E5%8C%BA%E5%88%AB">静态导入与动态导入的区别</h4>
+<blockquote>
+<p>1.静态导入属于编译器指令，动态导入属于动作指令<br>
+2.静态导入，会把两个JSP网页编译成一个servlet，不能有同名的属性和方法<br>
+3.动态导入，会把两个JSP网页编译成两个servlet，两者互补冲突</p>
+</blockquote>
+<h4 id="jsp%E7%9A%84%E4%B9%9D%E5%A4%A7%E5%86%85%E7%BD%AE%E5%AF%B9%E8%B1%A1%E5%9C%A8%E5%88%9B%E5%BB%BA%E9%A1%B5%E9%9D%A2%E6%97%B6%E5%B0%B1%E8%87%AA%E5%8A%A8%E5%88%9B%E5%BB%BA%E5%8F%AF%E4%BB%A5%E7%9B%B4%E6%8E%A5%E4%BD%BF%E7%94%A8%E7%9A%84">JSP的九大内置对象(在创建页面时就自动创建，可以直接使用的)</h4>
+<blockquote>
+<p>1.Request:请求对象<br>
+2.Response:响应对象<br>
+3.PageContext:JSP的上下文，可以通过它获取其他的对象<br>
+4.Session:服务器端保存用户数据(与Cookie区别:Cookie保存在浏览器端)<br>
+5.Application:servlet上下文，保存全局参数<br>
+6.Config:存放配置文件对象<br>
+7.Out:服务器向页面输出的流对象<br>
+8.Page:页面本身，相当于this<br>
+9.Exception:页面捕获的异常对象</p>
+</blockquote>
+<h4 id="jsp%E5%9B%9B%E5%A4%A7%E4%BD%9C%E7%94%A8%E5%9F%9F">JSP四大作用域</h4>
+<blockquote>
+<p>1.Application:项目不关闭，作用域就一直存在，通常存放系统级参数(全局参数)<br>
+2.Session:只要用户浏览器不关闭，作用域就不会消失<br>
+3.Request:作用域存在于当前页面和转发后的页面<br>
+4.PageContext:作用域在当前页面中存在</p>
+</blockquote>
+<pre class="hljs"><code><div>Random ran = <span class="hljs-keyword">new</span> Random();
+<span class="hljs-comment">//    int i = 10/0; //报错将停止执行下去</span>
+System.out.println(<span class="hljs-string">"Hello!!"</span>+ran.nextInt(<span class="hljs-number">10</span>));
+
+&lt;% String name = <span class="hljs-string">"朱颖"</span>; %&gt;
+&lt;%! String name1 = <span class="hljs-string">"称某人"</span>; %&gt;
+&lt;%! <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">eat</span><span class="hljs-params">()</span></span>{
+    <span class="hljs-keyword">return</span> <span class="hljs-string">"---吃西瓜---"</span>;
+<span class="hljs-comment">//    System.out.println("---吃西瓜---");</span>
+} %&gt;
+&lt;h1&gt;&lt;%=name%&gt;&lt;/h1&gt;
+&lt;h1&gt;&lt;%=name1%&gt;&lt;/h1&gt;
+<span class="hljs-comment">//方法调用</span>
+&lt;h1&gt;&lt;% eat(); %&gt;&lt;/h1&gt;
+&lt;%=eat()%&gt;
+
+&lt;% String name = <span class="hljs-string">"朱颖"</span>; %&gt;
+<span class="hljs-comment">//引用值</span>
+&lt;h1&gt;&lt;jsp:expression&gt;name&lt;/jsp:expression&gt;&lt;/h1&gt;
+<span class="hljs-comment">//页面引用</span>
+&lt;jsp:include page=<span class="hljs-string">"two.jsp"</span>&gt;&lt;/jsp:include&gt;
+
+<span class="hljs-comment">//往四大作用与中塞值</span>
+<span class="hljs-comment">//application,真正的是ServletContext对象，然后getServletContext() 可以省略了this.</span>
+ServletContext application = getServletContext();
+application.setAttribute(<span class="hljs-string">"application"</span>,<span class="hljs-string">"application的值"</span>);
+<span class="hljs-comment">//session塞值</span>
+HttpSession session = request.getSession();
+session.setAttribute(<span class="hljs-string">"session"</span>,<span class="hljs-string">"session的值"</span>);
+<span class="hljs-comment">//request塞值</span>
+request.setAttribute(<span class="hljs-string">"request"</span>,<span class="hljs-string">"request的值"</span>);
+
+request.getRequestDispatcher(<span class="hljs-string">"getScopeValue.jsp"</span>).forward(request,response);
+
+&lt;% pageContext.setAttribute(<span class="hljs-string">"page"</span>,<span class="hljs-string">"page的值"</span>); %&gt;
+&lt;h1&gt;page:&lt;%=pageContext.getAttribute(<span class="hljs-string">"page"</span>)%&gt;&lt;/h1&gt;
+&lt;h1&gt;application:&lt;%=application.getAttribute(<span class="hljs-string">"application"</span>) %&gt;&lt;/h1&gt;
+&lt;h1&gt;session:&lt;%=session.getAttribute(<span class="hljs-string">"session"</span>)%&gt;&lt;/h1&gt;
+&lt;h1&gt;request:&lt;%=request.getAttribute(<span class="hljs-string">"request"</span>)%&gt;&lt;/h1&gt;
+&lt;hr&gt;
+&lt;h1&gt;EL取值四大作用域&lt;/h1&gt;
+&lt;h1&gt;page:${pageScope.page}&lt;/h1&gt;
+&lt;h1&gt;application:${applicationScope.application}&lt;/h1&gt;
+&lt;h1&gt;session:${sessionScope.session}&lt;/h1&gt;
+&lt;h1&gt;request:${requestScope.request}&lt;/h1&gt;
+
+&lt;hr&gt;
+&lt;h1&gt;EL取值四大作用域&lt;/h1&gt;
+&lt;h1&gt;page:${page}&lt;/h1&gt;
+&lt;h1&gt;application:${application}&lt;/h1&gt;
+&lt;h1&gt;session:${session}&lt;/h1&gt;
+&lt;h1&gt;request:${request}&lt;/h1&gt;
+
+&lt;hr&gt;
+&lt;h1&gt;EL取值顺序:从小作用开始取值&lt;/h1&gt;
+&lt;%
+    application.setAttribute(<span class="hljs-string">"name"</span>,<span class="hljs-string">"朱某人"</span>);
+    session.setAttribute(<span class="hljs-string">"name"</span>,<span class="hljs-string">"陶某人"</span>);
+    request.setAttribute(<span class="hljs-string">"name"</span>,<span class="hljs-string">"王某人"</span>);
+%&gt;
+
+<span class="hljs-comment">//获得list的值，显示在网页上</span>
+&lt;h1&gt;name:${name}&lt;/h1&gt;
+
+&lt;%
+    ArrayList&lt;String&gt; list = <span class="hljs-keyword">new</span> ArrayList&lt;String&gt;();
+    list.add(<span class="hljs-string">"aaa"</span>);
+    list.add(<span class="hljs-string">"bbb"</span>);
+    list.add(<span class="hljs-string">"ccc"</span>);
+
+    request.setAttribute(<span class="hljs-string">"list"</span>,list);
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>;i&lt;list.size();i++){
+%&gt;
+    &lt;%=list.get(i)%&gt;
+&lt;%
+    }
+%&gt;
+
+&lt;%
+    ArrayList&lt;String&gt; li = (ArrayList)request.getAttribute(<span class="hljs-string">"list"</span>);
+    <span class="hljs-keyword">for</span> (String s:li){
+%&gt;
+    &lt;h1&gt;&lt;%=s%&gt;&lt;/h1&gt;
+&lt;%
+    }
+%&gt;
+</div></code></pre>
+<h4 id="el%E8%A1%A8%E8%BE%BE%E5%BC%8F">EL表达式</h4>
+<blockquote>
+<p>1.为了简化从四大作用域中取值<br>
+2.取值顺序:从小作用域开始寻找<br>
+3.注意: 这个是在JSP页面进行操作的，${} ,操作符号为大括号，与jQuery的$(),有所区别,这就可以直接访问request中设置的变量，取值顺序从最小的范围开始取值(四大作用域)</p>
+</blockquote>
+<pre class="hljs"><code><div>&lt;% pageContext.setAttribute(&quot;page&quot;,&quot;page的值&quot;); %&gt;
+
+&lt;h1&gt;page:&lt;%=pageContext.getAttribute(&quot;page&quot;)%&gt;&lt;/h1&gt;
+&lt;h1&gt;application:&lt;%=application.getAttribute(&quot;application&quot;) %&gt;&lt;/h1&gt;
+&lt;h1&gt;session:&lt;%=session.getAttribute(&quot;session&quot;)%&gt;&lt;/h1&gt;
+&lt;h1&gt;request:&lt;%=request.getAttribute(&quot;request&quot;)%&gt;&lt;/h1&gt;
+&lt;hr&gt;
+&lt;h1&gt;EL取值四大作用域&lt;/h1&gt;
+&lt;h1&gt;page:${pageScope.page}&lt;/h1&gt;
+&lt;h1&gt;application:${applicationScope.application}&lt;/h1&gt;
+&lt;h1&gt;session:${sessionScope.session}&lt;/h1&gt;
+&lt;h1&gt;request:${requestScope.request}&lt;/h1&gt;
+
+&lt;hr&gt;
+&lt;h1&gt;EL取值四大作用域&lt;/h1&gt;
+&lt;h1&gt;page:${page}&lt;/h1&gt;
+&lt;h1&gt;application:${application}&lt;/h1&gt;
+&lt;h1&gt;session:${session}&lt;/h1&gt;
+&lt;h1&gt;request:${request}&lt;/h1&gt;
+
+&lt;hr&gt;
+&lt;h1&gt;EL取值顺序:从小作用开始取值&lt;/h1&gt;
+&lt;%
+    application.setAttribute(&quot;name&quot;,&quot;朱某人&quot;);
+    session.setAttribute(&quot;name&quot;,&quot;陶某人&quot;);
+    request.setAttribute(&quot;name&quot;,&quot;王某人&quot;);
+%&gt;
+
+&lt;h1&gt;name:${name}&lt;/h1&gt;
+</div></code></pre>
+<blockquote>
+<p>EL对象取值(设置lombok之后的使用),及取值判断</p>
+</blockquote>
+<pre class="hljs"><code><div>
+&lt;%
+//方便设置的方式
+//    session.setAttribute(&quot;user&quot;,new User().setName(&quot;aaa&quot;).setPwd(&quot;123&quot;);
+    User user = new User().setName(&quot;aaa&quot;).setPwd(&quot;123&quot;);
+    session.setAttribute(&quot;user&quot;,user);
+    session.setAttribute(&quot;i&quot;,10);
+    session.setAttribute(&quot;j&quot;,5);
+%&gt;
+&lt;h1&gt;${user.getName()}&lt;/h1&gt;
+&lt;h1&gt;${user.pwd}&lt;/h1&gt;
+
+&lt;!--取值判断--!&gt;
+&lt;h1&gt;姓名不空则展示，为空则无名：${name != null?name:&quot;无名&quot;}&lt;/h1&gt;
+&lt;h1&gt;判断姓名是否为空：${ empty user.name }&lt;/h1&gt;
+&lt;h1&gt;i+j : ${ i+j }&lt;/h1&gt;
+&lt;h1&gt;i+j : ${ i }+${ j }&lt;/h1&gt;
+&lt;h1&gt;i==j: ${ i == j }&lt;/h1&gt;
+&lt;h1&gt;i&gt;j: ${ i &gt; j }&lt;/h1&gt;
+&lt;h1&gt;i eq j: ${ i eq j }&lt;/h1&gt;
+
+</div></code></pre>
+<h4 id="jstl%E6%A0%87%E7%AD%BE%E5%BA%93">JSTL标签库</h4>
+<blockquote>
+<p>1.他是一个开源的标签<br>
+2.简化JSP的页面开发，通常搭配EL表达式，进行业务逻辑处理<br>
+3.C标签库是JSTL的核心标签库，也是开发最常用的标签库<br>
+注意点：一定要把包引用对:(&lt;%@ taglib prefix=&quot;c&quot; uri=&quot;http://java.sun.com/jsp/jstl/core&quot; %&gt;)</p>
+</blockquote>
+<pre class="hljs"><code><div>&lt;%@ taglib prefix=&quot;c&quot; uri=&quot;http://java.sun.com/jsp/jstl/core&quot; %&gt;
+
+&lt;%
+    session.setAttribute(&quot;name&quot;,&quot;朱颖&quot;);
+%&gt;
+&lt;%--jstl取值--%&gt;
+&lt;h1&gt;设置了之后取值：&lt;c:out value=&quot;${name}&quot; default=&quot;无名&quot;&gt;&lt;/c:out&gt; &lt;/h1&gt;
+&lt;h1&gt;未设置时取值：&lt;c:out value=&quot;${sex}&quot;&gt;&lt;/c:out&gt; &lt;/h1&gt;
+&lt;%--jstl设值--%&gt;
+&lt;c:set var=&quot;sex&quot; value=&quot;男&quot; scope=&quot;request&quot;&gt;&lt;/c:set&gt;
+
+&lt;%--sjtl逻辑判断--%&gt;
+&lt;c:if test=&quot;${sex == '男'}&quot;&gt;
+    &lt;h1&gt;是男人&lt;/h1&gt;
+&lt;/c:if&gt;
+
+&lt;%--jstl多层逻辑判断,只触发一次 --%&gt;
+&lt;c:choose&gt;
+    &lt;c:when test=&quot;${sex == '男'}&quot;&gt;
+        &lt;h1&gt;强壮的男人&lt;/h1&gt;
+    &lt;/c:when&gt;
+    &lt;c:when test=&quot;${sex == '女'}&quot;&gt;
+        &lt;h1&gt;美丽的女人&lt;/h1&gt;
+    &lt;/c:when&gt;
+    &lt;c:when test=&quot;${name == '朱颖'}&quot;&gt;
+        &lt;h1&gt;就是的&lt;/h1&gt;
+    &lt;/c:when&gt;
+
+&lt;/c:choose&gt;
+
+&lt;%--jstl循环取值--%&gt;
+&lt;%
+    ArrayList&lt;String&gt; list = new ArrayList&lt;&gt;();
+    list.add(&quot;aaa&quot;);
+    list.add(&quot;bbb&quot;);
+    list.add(&quot;ccc&quot;);
+    request.setAttribute(&quot;list&quot;,list);
+%&gt;
+
+&lt;c:forEach var=&quot;s&quot; items=&quot;${list}&quot;&gt;
+    &lt;h1&gt;${s}&lt;/h1&gt;
+&lt;/c:forEach&gt;
+
+
+&lt;%--jstl分割取值--%&gt;
+&lt;%
+    request.setAttribute(&quot;ages&quot;,&quot;20,30,40,50&quot;);
+%&gt;
+&lt;c:forTokens items=&quot;${ages}&quot; delims=&quot;,&quot; var=&quot;age&quot;&gt;
+    &lt;h1&gt;${age}&lt;/h1&gt;
+&lt;/c:forTokens&gt;
+
+
+&lt;%--jstl移除作用域中的参数,用处不多，不想要就放在request中，只要调走就没了--%&gt;
+&lt;c:remove var=&quot;sex&quot; &gt;&lt;/c:remove&gt;
+</div></code></pre>
+<h4 id="jdbc%E4%BD%BF%E7%94%A8">JDBC使用</h4>
+<blockquote>
+<p>代码上</p>
+</blockquote>
+<pre class="hljs"><code><div>
+//定义一个全局的数据库连接
+private Connection connection;
+
+//代码块，执行构造方法之前，会执行这块代码块
+{
+    //JDBC操作数据库分4步
+    try{
+        //第一步加载驱动
+        //数据库版本为5.7时
+        //Class.forName(&quot;com.mysql.jdbc.Driver&quot;);
+        //数据库版本为8.0时
+        Class.forName(&quot;com.mysql.cj.jdbc.Driver&quot;);
+        //第二步 获取数据库连接，这里安置在代码块中，不要在叫Connection声明connection的类型，要不然只是局部变量
+        connection = DriverManager.getConnection(&quot;jdbc:mysql://localhost:3306/mydb?characterEncoding=utf-8&quot;,&quot;root&quot;,&quot;123456&quot;);
+        System.out.println(&quot;------MySql---connected-----&quot;);
+        System.out.println(connection);
+    }catch(Exception e){
+        e.printStackTrace();
+    }
+}
+
+@Override
+public void save(User user) throws Exception {
+    System.out.println(&quot;------save-----begin------&quot;);
+
+//        //JDBC操作数据库分4步
+//        //第一步加载驱动
+//        //数据库版本为5.7时
+//        //Class.forName(&quot;com.mysql.jdbc.Driver&quot;);
+//        //数据库版本为8.0时
+//        Class.forName(&quot;com.mysql.cj.jdbc.Driver&quot;);
+//        //第二步 获取数据库连接
+//        Connection connection = DriverManager.getConnection(&quot;jdbc:mysql://localhost:3306/mydb?characterEncoding=utf-8&quot;,&quot;root&quot;,&quot;123456&quot;);
+//        System.out.println(&quot;------MySql---connected-----&quot;);
+//        System.out.println(connection);
+
+    //第三步，创建sql语句执行者
+//        Statement statement = connection.createStatement();
+
+    //第四步，执行sql语句
+//        String sql = &quot;insert into user(name,pwd,sex,phone,address) values('a','a','a','a','a'),('b','b','b','b','b')&quot;;
+//        statement.executeUpdate(sql);
+
+    //第三步 创建携带参数的sql语句执行者
+    String sql = &quot;insert into user(name,pwd,sex,phone,address) values(?,?,?,?,?)&quot;;
+    PreparedStatement ps = connection.prepareStatement(sql);
+
+    //给 ? 赋值
+    ps.setString(1,user.getName());
+    ps.setString(2,user.getPwd());
+    ps.setString(3,user.getSex());
+    ps.setString(4,user.getPhone());
+    ps.setString(5,user.getAddress());
+
+    ps.executeUpdate();
+
+    System.out.println(&quot;------save-----over------&quot;);
+
+}
+
+@Override
+public void update(User user) throws Exception {
+    System.out.println(&quot;------update-----begin------&quot;);
+
+//        //JDBC操作数据库分4步
+//        //第一步加载驱动
+//        //数据库版本为5.7时
+//        //Class.forName(&quot;com.mysql.jdbc.Driver&quot;);
+//        //数据库版本为8.0时
+//        Class.forName(&quot;com.mysql.cj.jdbc.Driver&quot;);
+//        //第二步 获取数据库连接
+//        Connection connection = DriverManager.getConnection(&quot;jdbc:mysql://localhost:3306/mydb?characterEncoding=utf-8&quot;,&quot;root&quot;,&quot;123456&quot;);
+//        System.out.println(&quot;------MySql---connected-----&quot;);
+//        System.out.println(connection);
+
+    //第三步，创建sql语句执行者
+//        Statement statement = connection.createStatement();
+
+    //第四步，执行sql语句
+//        String sql = &quot;insert into user(name,pwd,sex,phone,address) values('a','a','a','a','a'),('b','b','b','b','b')&quot;;
+//        statement.executeUpdate(sql);
+
+    //第三步 创建携带参数的sql语句执行者
+    String sql = &quot;update user set name=?,pwd=?,sex=?,phone=?,address=? where id=?&quot;;
+    PreparedStatement ps = connection.prepareStatement(sql);
+
+    //给 ? 赋值
+    ps.setString(1,user.getName());
+    ps.setString(2,user.getPwd());
+    ps.setString(3,user.getSex());
+    ps.setString(4,user.getPhone());
+    ps.setString(5,user.getAddress());
+    ps.setLong(6,user.getId());
+
+    ps.executeUpdate();
+
+    System.out.println(&quot;------update-----over------&quot;);
+
+}
+
+@Override
+public void deleteById(Long id) throws Exception {
+    System.out.println(&quot;------deleteById-----begin------&quot;);
+
+    //1.可以使用下面的，但是麻烦
+//        String sql = &quot;delete from user where id=?&quot;;
+//        PreparedStatement ps = connection.prepareStatement(sql);
+//        //给 ? 赋值
+//        ps.setLong(1,id);
+//        ps.executeUpdate();
+    //2.下面的更简单
+    Statement statement = connection.createStatement();
+    statement.executeUpdate(&quot;delete from user where id = &quot;+id);
+
+    System.out.println(&quot;------deleteById-----over------&quot;);
+}
+
+@Override
+public User selectByName(String name) throws SQLException {
+    System.out.println(&quot;------selectByName-----begin------&quot;);
+    User user = new User();
+
+    Statement statement = connection.createStatement();
+    ResultSet reSet = statement.executeQuery(&quot;select * from USER  where name='&quot;+name+&quot;'&quot;);
+
+    reSet.next();
+    user.setName(reSet.getString(&quot;name&quot;))
+            .setPwd(reSet.getString(&quot;pwd&quot;));
+
+
+    System.out.println(&quot;------selectByName-----over------&quot;);
+
+    return user;
+}
+
+@Override
+public User selectById(Long id) throws SQLException {
+    System.out.println(&quot;------selectById-----begin------&quot;);
+    User user = new User();
+    ResultSet reSet;
+
+    String sql = &quot;select * from user where id=?&quot;;
+    PreparedStatement ps = connection.prepareStatement(sql);
+    //给 ? 赋值
+    ps.setLong(1,id);
+    reSet = ps.executeQuery();
+
+    reSet.next();
+    user.setId(reSet.getLong(1))
+            .setName(reSet.getString(2))
+            .setPwd(reSet.getString(3))
+            .setSex(reSet.getString(4))
+            .setPhone(reSet.getString(5))
+            .setAddress(reSet.getString(6));
+
+
+    System.out.println(&quot;------selectById-----over------&quot;);
+
+    return user;
+}
+
+@Override
+public List&lt;User&gt; selectByAll() throws SQLException {
+    System.out.println(&quot;------selectByAll-----begin------&quot;);
+//1.麻烦的写法
+//        List&lt;User&gt; list = new ArrayList&lt;&gt;();
+//        ResultSet reSet;
+//
+//        String sql = &quot;select * from user&quot;;
+//        PreparedStatement ps = connection.prepareStatement(sql);
+//
+//        reSet =  ps.executeQuery();
+//        while (reSet.next()){
+//            User user = new User();
+//            list.add(user.setId(reSet.getLong(1))
+//                    .setName(reSet.getString(2))
+//                    .setPwd(reSet.getString(3))
+//                    .setSex(reSet.getString(4))
+//                    .setPhone(reSet.getString(5))
+//                    .setAddress(reSet.getString(6)));
+//        }
+
+//2.简单的写法
+    ArrayList&lt;User&gt; list = new ArrayList&lt;&gt;();
+    try{
+        Statement statement = connection.createStatement();
+
+        ResultSet rs = statement.executeQuery(&quot;select * from user &quot;);
+        //循环取rs中的数值，next方法判断是否还有下一条数据
+        while(rs.next()){
+            list.add(new User().setName(rs.getString(&quot;name&quot;))
+                    .setPhone(rs.getString(&quot;phone&quot;))
+                    .setSex(rs.getString(&quot;sex&quot;))
+                    .setPwd(rs.getString(&quot;pwd&quot;))
+                    .setAddress(rs.getString(&quot;address&quot;))
+                    .setId(rs.getLong(&quot;id&quot;))
+            );
+        }
+    }catch (Exception e){
+        e.printStackTrace();
+    }
+
+    System.out.println(&quot;------selectByAll-----over------&quot;);
+
+    return list;
+}
+
+public static void main(String[] args) throws Exception{
+    UserDaoImpl dao = new UserDaoImpl();
+//        dao.save(new User());
+//        dao.save(new User().setName(&quot;x&quot;).setPwd(&quot;123&quot;).setPhone(&quot;191919191&quot;).setSex(&quot;男&quot;).setAddress(&quot;南京&quot;));
+//        dao.update(new User().setId((long) 9).setName(&quot;xxxx&quot;).setPwd(&quot;123&quot;).setPhone(&quot;191919191&quot;).setSex(&quot;男&quot;).setAddress(&quot;南京&quot;));
+//        dao.deleteById((long) 5);
+//        System.out.println(dao.selectById((long) 9));
+//        System.out.println(dao.selectByAll());
+//        dao.selectByAll().forEach(System.out::println);
+    dao.selectByName(&quot;abc&quot;);
+}
+</div></code></pre>
+<h4 id="jdbc%E6%B3%A8%E6%84%8F%E7%82%B9">JDBC注意点</h4>
+<pre class="hljs"><code><div>//在页面挑战时，中文乱码，以下语句先执行在跳转
+request.setCharacterEncoding(&quot;UTF-8&quot;);
+
+//出现:&quot;Server returns invalid timezone. Need to set 'serverTimezone' property.&quot;
+
+mysql里面执行: set global time_zone = '+8:00';
+//更改mysql密码策略，并设置密码，刷新mysql服务器缓存
+set global validate_password_policy=0;
+set global validate_password_length=4;
+set password for 'root'@'localhost'=password('新的密码');
+flush privileges;
+
+</div></code></pre>
+
+</body>
+</html>
